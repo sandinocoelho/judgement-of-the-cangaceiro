@@ -19,14 +19,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.darts;
+package cloud.sandino.judgementofthecangaceiro.items.weapon.missiles.darts;
 
-import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Adrenaline;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Buff;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Cripple;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.actors.Char;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Adrenaline;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Buff;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Cripple;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.Hero;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
 
 public class AdrenalineDart extends TippedDart {
 	

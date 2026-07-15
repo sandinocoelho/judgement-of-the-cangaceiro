@@ -19,12 +19,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.windows;
+package cloud.sandino.judgementofthecangaceiro.windows;
 
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.levels.traps.Trap;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.tiles.TerrainFeaturesTilemap;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.levels.traps.Trap;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.tiles.TerrainFeaturesTilemap;
 
 public class WndInfoTrap extends WndTitledMessage {
 

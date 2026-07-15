@@ -19,16 +19,16 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.scenes;
+package cloud.sandino.judgementofthecangaceiro.scenes;
 
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.SPDAction;
-import com.shatteredpixel.shatteredpixeldungeon.SPDSettings;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Actor;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Mob;
-import com.shatteredpixel.shatteredpixeldungeon.items.Heap;
-import com.shatteredpixel.shatteredpixeldungeon.tiles.DungeonTilemap;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.SPDAction;
+import cloud.sandino.judgementofthecangaceiro.SPDSettings;
+import cloud.sandino.judgementofthecangaceiro.actors.Actor;
+import cloud.sandino.judgementofthecangaceiro.actors.Char;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Mob;
+import cloud.sandino.judgementofthecangaceiro.items.Heap;
+import cloud.sandino.judgementofthecangaceiro.tiles.DungeonTilemap;
 import com.watabou.input.ControllerHandler;
 import com.watabou.input.GameAction;
 import com.watabou.input.KeyBindings;

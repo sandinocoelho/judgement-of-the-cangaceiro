@@ -19,24 +19,24 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.items.spells;
+package cloud.sandino.judgementofthecangaceiro.items.spells;
 
-import com.shatteredpixel.shatteredpixeldungeon.Assets;
-import com.shatteredpixel.shatteredpixeldungeon.Badges;
-import com.shatteredpixel.shatteredpixeldungeon.effects.CellEmitter;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.ShadowParticle;
-import com.shatteredpixel.shatteredpixeldungeon.items.EquipableItem;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.armor.Armor;
-import com.shatteredpixel.shatteredpixeldungeon.items.quest.MetalShard;
-import com.shatteredpixel.shatteredpixeldungeon.items.rings.RingOfMight;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfRemoveCurse;
-import com.shatteredpixel.shatteredpixeldungeon.items.wands.Wand;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.SpiritBow;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.Weapon;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.melee.MagesStaff;
-import com.shatteredpixel.shatteredpixeldungeon.journal.Catalog;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.Assets;
+import cloud.sandino.judgementofthecangaceiro.Badges;
+import cloud.sandino.judgementofthecangaceiro.effects.CellEmitter;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.ShadowParticle;
+import cloud.sandino.judgementofthecangaceiro.items.EquipableItem;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.armor.Armor;
+import cloud.sandino.judgementofthecangaceiro.items.quest.MetalShard;
+import cloud.sandino.judgementofthecangaceiro.items.rings.RingOfMight;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.ScrollOfRemoveCurse;
+import cloud.sandino.judgementofthecangaceiro.items.wands.Wand;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.SpiritBow;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.Weapon;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.melee.MagesStaff;
+import cloud.sandino.judgementofthecangaceiro.journal.Catalog;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
 import com.watabou.noosa.audio.Sample;
 
 import java.util.ArrayList;
@@ -106,7 +106,7 @@ public class CurseInfusion extends InventorySpell {
 		return (int)(12 * (quantity/(float)Recipe.OUT_QUANTITY));
 	}
 	
-	public static class Recipe extends com.shatteredpixel.shatteredpixeldungeon.items.Recipe.SimpleRecipe {
+	public static class Recipe extends cloud.sandino.judgementofthecangaceiro.items.Recipe.SimpleRecipe {
 
 		private static final int OUT_QUANTITY = 4;
 		

@@ -19,16 +19,16 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.actors.buffs;
+package cloud.sandino.judgementofthecangaceiro.actors.buffs;
 
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.spells.SpiritForm;
-import com.shatteredpixel.shatteredpixeldungeon.items.artifacts.ChaliceOfBlood;
-import com.shatteredpixel.shatteredpixeldungeon.items.rings.RingOfEnergy;
-import com.shatteredpixel.shatteredpixeldungeon.items.trinkets.ChaoticCenser;
-import com.shatteredpixel.shatteredpixeldungeon.items.trinkets.SaltCube;
-import com.shatteredpixel.shatteredpixeldungeon.levels.VaultLevel;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.Hero;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.spells.SpiritForm;
+import cloud.sandino.judgementofthecangaceiro.items.artifacts.ChaliceOfBlood;
+import cloud.sandino.judgementofthecangaceiro.items.rings.RingOfEnergy;
+import cloud.sandino.judgementofthecangaceiro.items.trinkets.ChaoticCenser;
+import cloud.sandino.judgementofthecangaceiro.items.trinkets.SaltCube;
+import cloud.sandino.judgementofthecangaceiro.levels.VaultLevel;
 import com.watabou.utils.Bundle;
 
 public class Regeneration extends Buff {

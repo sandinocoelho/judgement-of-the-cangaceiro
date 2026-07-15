@@ -19,13 +19,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.actors.mobs;
+package cloud.sandino.judgementofthecangaceiro.actors.mobs;
 
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Buff;
-import com.shatteredpixel.shatteredpixeldungeon.items.artifacts.TalismanOfForesight;
-import com.shatteredpixel.shatteredpixeldungeon.items.wands.WandOfBlastWave;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.actors.Char;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Buff;
+import cloud.sandino.judgementofthecangaceiro.items.artifacts.TalismanOfForesight;
+import cloud.sandino.judgementofthecangaceiro.items.wands.WandOfBlastWave;
 import com.watabou.utils.Bundle;
 import com.watabou.utils.PointF;
 

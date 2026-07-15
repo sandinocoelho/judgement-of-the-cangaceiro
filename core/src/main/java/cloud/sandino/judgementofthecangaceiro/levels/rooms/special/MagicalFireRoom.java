@@ -19,30 +19,30 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.levels.rooms.special;
+package cloud.sandino.judgementofthecangaceiro.levels.rooms.special;
 
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Actor;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.Blizzard;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.Blob;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.Fire;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.Freezing;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Buff;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Burning;
-import com.shatteredpixel.shatteredpixeldungeon.effects.BlobEmitter;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.ElmoParticle;
-import com.shatteredpixel.shatteredpixeldungeon.items.Generator;
-import com.shatteredpixel.shatteredpixeldungeon.items.Honeypot;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfFrost;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Level;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Terrain;
-import com.shatteredpixel.shatteredpixeldungeon.levels.painters.Painter;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.Room;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.standard.EmptyRoom;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.actors.Actor;
+import cloud.sandino.judgementofthecangaceiro.actors.Char;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.Blizzard;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.Blob;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.Fire;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.Freezing;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Buff;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Burning;
+import cloud.sandino.judgementofthecangaceiro.effects.BlobEmitter;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.ElmoParticle;
+import cloud.sandino.judgementofthecangaceiro.items.Generator;
+import cloud.sandino.judgementofthecangaceiro.items.Honeypot;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfFrost;
+import cloud.sandino.judgementofthecangaceiro.levels.Level;
+import cloud.sandino.judgementofthecangaceiro.levels.Terrain;
+import cloud.sandino.judgementofthecangaceiro.levels.painters.Painter;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.Room;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.standard.EmptyRoom;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.scenes.GameScene;
 import com.watabou.utils.PathFinder;
 import com.watabou.utils.Point;
 import com.watabou.utils.Random;

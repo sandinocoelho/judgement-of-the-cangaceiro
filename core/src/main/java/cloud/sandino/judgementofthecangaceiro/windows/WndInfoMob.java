@@ -19,15 +19,15 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.windows;
+package cloud.sandino.judgementofthecangaceiro.windows;
 
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Mob;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.PixelScene;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.CharSprite;
-import com.shatteredpixel.shatteredpixeldungeon.ui.BuffIndicator;
-import com.shatteredpixel.shatteredpixeldungeon.ui.HealthBar;
-import com.shatteredpixel.shatteredpixeldungeon.ui.RenderedTextBlock;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Mob;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.scenes.PixelScene;
+import cloud.sandino.judgementofthecangaceiro.sprites.CharSprite;
+import cloud.sandino.judgementofthecangaceiro.ui.BuffIndicator;
+import cloud.sandino.judgementofthecangaceiro.ui.HealthBar;
+import cloud.sandino.judgementofthecangaceiro.ui.RenderedTextBlock;
 import com.watabou.noosa.ui.Component;
 
 public class WndInfoMob extends WndTitledMessage {

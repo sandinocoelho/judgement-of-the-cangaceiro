@@ -19,19 +19,19 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.items;
+package cloud.sandino.judgementofthecangaceiro.items;
 
-import com.shatteredpixel.shatteredpixeldungeon.Badges;
-import com.shatteredpixel.shatteredpixeldungeon.Challenges;
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.ShatteredPixelDungeon;
-import com.shatteredpixel.shatteredpixeldungeon.Statistics;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Actor;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.AscensionChallenge;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.AmuletScene;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.Badges;
+import cloud.sandino.judgementofthecangaceiro.Challenges;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.ShatteredPixelDungeon;
+import cloud.sandino.judgementofthecangaceiro.Statistics;
+import cloud.sandino.judgementofthecangaceiro.actors.Actor;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.AscensionChallenge;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.Hero;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.scenes.AmuletScene;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
 import com.watabou.noosa.Game;
 
 import java.io.IOException;

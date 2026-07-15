@@ -19,17 +19,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.items.bombs;
+package cloud.sandino.judgementofthecangaceiro.items.bombs;
 
-import com.shatteredpixel.shatteredpixeldungeon.Assets;
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Actor;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Mob;
-import com.shatteredpixel.shatteredpixeldungeon.effects.CellEmitter;
-import com.shatteredpixel.shatteredpixeldungeon.effects.Speck;
-import com.shatteredpixel.shatteredpixeldungeon.items.Heap;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.Assets;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.actors.Actor;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.Hero;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Mob;
+import cloud.sandino.judgementofthecangaceiro.effects.CellEmitter;
+import cloud.sandino.judgementofthecangaceiro.effects.Speck;
+import cloud.sandino.judgementofthecangaceiro.items.Heap;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
 import com.watabou.noosa.audio.Sample;
 import com.watabou.utils.Bundle;
 

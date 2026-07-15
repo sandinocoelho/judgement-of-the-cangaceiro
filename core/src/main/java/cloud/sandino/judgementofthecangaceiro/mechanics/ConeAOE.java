@@ -19,9 +19,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.mechanics;
+package cloud.sandino.judgementofthecangaceiro.mechanics;
 
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
 import com.watabou.utils.GameMath;
 import com.watabou.utils.Point;
 import com.watabou.utils.PointF;

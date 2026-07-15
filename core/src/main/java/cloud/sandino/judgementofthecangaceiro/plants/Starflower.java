@@ -19,18 +19,18 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.plants;
+package cloud.sandino.judgementofthecangaceiro.plants;
 
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Bless;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Buff;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Recharging;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.HeroSubClass;
-import com.shatteredpixel.shatteredpixeldungeon.effects.Flare;
-import com.shatteredpixel.shatteredpixeldungeon.effects.SpellSprite;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.actors.Char;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Bless;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Buff;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Recharging;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.Hero;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.HeroSubClass;
+import cloud.sandino.judgementofthecangaceiro.effects.Flare;
+import cloud.sandino.judgementofthecangaceiro.effects.SpellSprite;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
 
 public class Starflower extends Plant {
 

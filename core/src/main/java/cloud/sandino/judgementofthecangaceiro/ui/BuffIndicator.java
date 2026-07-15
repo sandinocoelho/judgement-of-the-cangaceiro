@@ -19,18 +19,18 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.ui;
+package cloud.sandino.judgementofthecangaceiro.ui;
 
-import com.shatteredpixel.shatteredpixeldungeon.Assets;
-import com.shatteredpixel.shatteredpixeldungeon.Badges;
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Buff;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.PixelScene;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.CharSprite;
-import com.shatteredpixel.shatteredpixeldungeon.windows.WndInfoBuff;
+import cloud.sandino.judgementofthecangaceiro.Assets;
+import cloud.sandino.judgementofthecangaceiro.Badges;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.actors.Char;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Buff;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.scenes.GameScene;
+import cloud.sandino.judgementofthecangaceiro.scenes.PixelScene;
+import cloud.sandino.judgementofthecangaceiro.sprites.CharSprite;
+import cloud.sandino.judgementofthecangaceiro.windows.WndInfoBuff;
 import com.watabou.gltextures.TextureCache;
 import com.watabou.noosa.BitmapText;
 import com.watabou.noosa.Image;

@@ -19,20 +19,20 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.actors.mobs;
+package cloud.sandino.judgementofthecangaceiro.actors.mobs;
 
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Buff;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Cripple;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Light;
-import com.shatteredpixel.shatteredpixeldungeon.items.Generator;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.Potion;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfHealing;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfStrength;
-import com.shatteredpixel.shatteredpixeldungeon.mechanics.Ballistica;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ScorpioSprite;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.actors.Char;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Buff;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Cripple;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Light;
+import cloud.sandino.judgementofthecangaceiro.items.Generator;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.potions.Potion;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfHealing;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfStrength;
+import cloud.sandino.judgementofthecangaceiro.mechanics.Ballistica;
+import cloud.sandino.judgementofthecangaceiro.sprites.ScorpioSprite;
 import com.watabou.utils.Random;
 import com.watabou.utils.Reflection;
 

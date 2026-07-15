@@ -19,24 +19,24 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.windows;
+package cloud.sandino.judgementofthecangaceiro.windows;
 
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.Statistics;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.abilities.ArmorAbility;
-import com.shatteredpixel.shatteredpixeldungeon.items.KingsCrown;
-import com.shatteredpixel.shatteredpixeldungeon.items.armor.Armor;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.PixelScene;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSprite;
-import com.shatteredpixel.shatteredpixeldungeon.ui.HeroIcon;
-import com.shatteredpixel.shatteredpixeldungeon.ui.IconButton;
-import com.shatteredpixel.shatteredpixeldungeon.ui.Icons;
-import com.shatteredpixel.shatteredpixeldungeon.ui.RedButton;
-import com.shatteredpixel.shatteredpixeldungeon.ui.RenderedTextBlock;
-import com.shatteredpixel.shatteredpixeldungeon.ui.Window;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.Statistics;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.Hero;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.abilities.ArmorAbility;
+import cloud.sandino.judgementofthecangaceiro.items.KingsCrown;
+import cloud.sandino.judgementofthecangaceiro.items.armor.Armor;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.scenes.GameScene;
+import cloud.sandino.judgementofthecangaceiro.scenes.PixelScene;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSprite;
+import cloud.sandino.judgementofthecangaceiro.ui.HeroIcon;
+import cloud.sandino.judgementofthecangaceiro.ui.IconButton;
+import cloud.sandino.judgementofthecangaceiro.ui.Icons;
+import cloud.sandino.judgementofthecangaceiro.ui.RedButton;
+import cloud.sandino.judgementofthecangaceiro.ui.RenderedTextBlock;
+import cloud.sandino.judgementofthecangaceiro.ui.Window;
 import com.watabou.noosa.Game;
 import com.watabou.utils.Random;
 

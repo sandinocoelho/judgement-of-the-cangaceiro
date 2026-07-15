@@ -19,30 +19,30 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.scenes;
+package cloud.sandino.judgementofthecangaceiro.scenes;
 
-import com.shatteredpixel.shatteredpixeldungeon.Assets;
-import com.shatteredpixel.shatteredpixeldungeon.Badges;
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.Rankings;
-import com.shatteredpixel.shatteredpixeldungeon.SPDSettings;
-import com.shatteredpixel.shatteredpixeldungeon.ShatteredPixelDungeon;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.HeroClass;
-import com.shatteredpixel.shatteredpixeldungeon.effects.Flare;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSprite;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
-import com.shatteredpixel.shatteredpixeldungeon.ui.Button;
-import com.shatteredpixel.shatteredpixeldungeon.ui.ExitButton;
-import com.shatteredpixel.shatteredpixeldungeon.ui.IconButton;
-import com.shatteredpixel.shatteredpixeldungeon.ui.Icons;
-import com.shatteredpixel.shatteredpixeldungeon.ui.RenderedTextBlock;
-import com.shatteredpixel.shatteredpixeldungeon.ui.TitleBackground;
-import com.shatteredpixel.shatteredpixeldungeon.ui.Window;
-import com.shatteredpixel.shatteredpixeldungeon.windows.IconTitle;
-import com.shatteredpixel.shatteredpixeldungeon.windows.WndDailies;
-import com.shatteredpixel.shatteredpixeldungeon.windows.WndRanking;
-import com.shatteredpixel.shatteredpixeldungeon.windows.WndVictoryCongrats;
+import cloud.sandino.judgementofthecangaceiro.Assets;
+import cloud.sandino.judgementofthecangaceiro.Badges;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.Rankings;
+import cloud.sandino.judgementofthecangaceiro.SPDSettings;
+import cloud.sandino.judgementofthecangaceiro.ShatteredPixelDungeon;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.HeroClass;
+import cloud.sandino.judgementofthecangaceiro.effects.Flare;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSprite;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.ui.Button;
+import cloud.sandino.judgementofthecangaceiro.ui.ExitButton;
+import cloud.sandino.judgementofthecangaceiro.ui.IconButton;
+import cloud.sandino.judgementofthecangaceiro.ui.Icons;
+import cloud.sandino.judgementofthecangaceiro.ui.RenderedTextBlock;
+import cloud.sandino.judgementofthecangaceiro.ui.TitleBackground;
+import cloud.sandino.judgementofthecangaceiro.ui.Window;
+import cloud.sandino.judgementofthecangaceiro.windows.IconTitle;
+import cloud.sandino.judgementofthecangaceiro.windows.WndDailies;
+import cloud.sandino.judgementofthecangaceiro.windows.WndRanking;
+import cloud.sandino.judgementofthecangaceiro.windows.WndVictoryCongrats;
 import com.watabou.noosa.BitmapText;
 import com.watabou.noosa.Camera;
 import com.watabou.noosa.Image;

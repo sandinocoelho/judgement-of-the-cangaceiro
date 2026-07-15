@@ -19,20 +19,20 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.items.weapon.curses;
+package cloud.sandino.judgementofthecangaceiro.items.weapon.curses;
 
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.BlastParticle;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.SmokeParticle;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.bombs.Bomb;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.Weapon;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.MissileWeapon;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.CharSprite;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSprite;
-import com.shatteredpixel.shatteredpixeldungeon.utils.GLog;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.actors.Char;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.BlastParticle;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.SmokeParticle;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.bombs.Bomb;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.Weapon;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.missiles.MissileWeapon;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.sprites.CharSprite;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSprite;
+import cloud.sandino.judgementofthecangaceiro.utils.GLog;
 import com.watabou.utils.Bundle;
 import com.watabou.utils.PathFinder;
 import com.watabou.utils.Random;

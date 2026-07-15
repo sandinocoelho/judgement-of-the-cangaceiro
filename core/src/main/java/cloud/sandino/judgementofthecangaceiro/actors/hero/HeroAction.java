@@ -19,9 +19,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.actors.hero;
+package cloud.sandino.judgementofthecangaceiro.actors.hero;
 
-import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
+import cloud.sandino.judgementofthecangaceiro.actors.Char;
 
 public class HeroAction {
 	

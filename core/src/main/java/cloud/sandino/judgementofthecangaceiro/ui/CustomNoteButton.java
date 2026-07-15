@@ -19,28 +19,28 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.ui;
+package cloud.sandino.judgementofthecangaceiro.ui;
 
-import com.shatteredpixel.shatteredpixeldungeon.ShatteredPixelDungeon;
-import com.shatteredpixel.shatteredpixeldungeon.Statistics;
-import com.shatteredpixel.shatteredpixeldungeon.items.EquipableItem;
-import com.shatteredpixel.shatteredpixeldungeon.items.Generator;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.rings.Ring;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.Scroll;
-import com.shatteredpixel.shatteredpixeldungeon.items.trinkets.Trinket;
-import com.shatteredpixel.shatteredpixeldungeon.items.wands.Wand;
-import com.shatteredpixel.shatteredpixeldungeon.journal.Notes;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.PixelScene;
-import com.shatteredpixel.shatteredpixeldungeon.windows.WndBag;
-import com.shatteredpixel.shatteredpixeldungeon.windows.WndJournal;
-import com.shatteredpixel.shatteredpixeldungeon.windows.WndJournalItem;
-import com.shatteredpixel.shatteredpixeldungeon.windows.WndOptions;
-import com.shatteredpixel.shatteredpixeldungeon.windows.WndTextInput;
-import com.shatteredpixel.shatteredpixeldungeon.windows.WndTitledMessage;
-import com.shatteredpixel.shatteredpixeldungeon.windows.WndUseItem;
+import cloud.sandino.judgementofthecangaceiro.ShatteredPixelDungeon;
+import cloud.sandino.judgementofthecangaceiro.Statistics;
+import cloud.sandino.judgementofthecangaceiro.items.EquipableItem;
+import cloud.sandino.judgementofthecangaceiro.items.Generator;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.rings.Ring;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.Scroll;
+import cloud.sandino.judgementofthecangaceiro.items.trinkets.Trinket;
+import cloud.sandino.judgementofthecangaceiro.items.wands.Wand;
+import cloud.sandino.judgementofthecangaceiro.journal.Notes;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.scenes.GameScene;
+import cloud.sandino.judgementofthecangaceiro.scenes.PixelScene;
+import cloud.sandino.judgementofthecangaceiro.windows.WndBag;
+import cloud.sandino.judgementofthecangaceiro.windows.WndJournal;
+import cloud.sandino.judgementofthecangaceiro.windows.WndJournalItem;
+import cloud.sandino.judgementofthecangaceiro.windows.WndOptions;
+import cloud.sandino.judgementofthecangaceiro.windows.WndTextInput;
+import cloud.sandino.judgementofthecangaceiro.windows.WndTitledMessage;
+import cloud.sandino.judgementofthecangaceiro.windows.WndUseItem;
 import com.watabou.utils.Reflection;
 
 import java.util.ArrayList;

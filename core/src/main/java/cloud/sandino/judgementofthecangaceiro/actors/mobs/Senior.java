@@ -19,10 +19,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.actors.mobs;
+package cloud.sandino.judgementofthecangaceiro.actors.mobs;
 
-import com.shatteredpixel.shatteredpixeldungeon.items.food.Pasty;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.SeniorSprite;
+import cloud.sandino.judgementofthecangaceiro.items.food.Pasty;
+import cloud.sandino.judgementofthecangaceiro.sprites.SeniorSprite;
 import com.watabou.utils.Random;
 
 public class Senior extends Monk {

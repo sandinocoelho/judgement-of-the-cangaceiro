@@ -19,7 +19,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.services.updates;
+package cloud.sandino.judgementofthecangaceiro.services.updates;
 
 //TODO with review functionality, this service is about more than just updates
 // perhaps rename to PlatformService, StoreService, DistributionService, etc?

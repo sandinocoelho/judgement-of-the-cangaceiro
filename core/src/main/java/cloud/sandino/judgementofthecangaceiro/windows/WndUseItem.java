@@ -19,14 +19,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.windows;
+package cloud.sandino.judgementofthecangaceiro.windows;
 
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.ui.InventoryPane;
-import com.shatteredpixel.shatteredpixeldungeon.ui.ItemJournalButton;
-import com.shatteredpixel.shatteredpixeldungeon.ui.RedButton;
-import com.shatteredpixel.shatteredpixeldungeon.ui.Window;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.ui.InventoryPane;
+import cloud.sandino.judgementofthecangaceiro.ui.ItemJournalButton;
+import cloud.sandino.judgementofthecangaceiro.ui.RedButton;
+import cloud.sandino.judgementofthecangaceiro.ui.Window;
 
 import java.util.ArrayList;
 

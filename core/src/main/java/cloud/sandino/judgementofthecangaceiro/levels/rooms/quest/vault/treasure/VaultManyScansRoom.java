@@ -19,17 +19,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.levels.rooms.quest.vault.treasure;
+package cloud.sandino.judgementofthecangaceiro.levels.rooms.quest.vault.treasure;
 
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.npcs.VaultSentry;
-import com.shatteredpixel.shatteredpixeldungeon.items.Generator;
-import com.shatteredpixel.shatteredpixeldungeon.items.Heap;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfInvisibility;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.melee.MeleeWeapon;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Level;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Terrain;
-import com.shatteredpixel.shatteredpixeldungeon.levels.painters.Painter;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.npcs.VaultSentry;
+import cloud.sandino.judgementofthecangaceiro.items.Generator;
+import cloud.sandino.judgementofthecangaceiro.items.Heap;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfInvisibility;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.melee.MeleeWeapon;
+import cloud.sandino.judgementofthecangaceiro.levels.Level;
+import cloud.sandino.judgementofthecangaceiro.levels.Terrain;
+import cloud.sandino.judgementofthecangaceiro.levels.painters.Painter;
 import com.watabou.utils.Point;
 
 import java.util.ArrayList;

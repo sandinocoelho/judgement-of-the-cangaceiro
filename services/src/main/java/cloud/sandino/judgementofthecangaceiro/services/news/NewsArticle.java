@@ -19,7 +19,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.services.news;
+package cloud.sandino.judgementofthecangaceiro.services.news;
 
 import java.util.Date;
 

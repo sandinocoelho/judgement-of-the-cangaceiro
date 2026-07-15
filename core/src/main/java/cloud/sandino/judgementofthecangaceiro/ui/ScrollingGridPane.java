@@ -19,10 +19,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.ui;
+package cloud.sandino.judgementofthecangaceiro.ui;
 
-import com.shatteredpixel.shatteredpixeldungeon.scenes.PixelScene;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSprite;
+import cloud.sandino.judgementofthecangaceiro.scenes.PixelScene;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSprite;
 import com.watabou.noosa.ColorBlock;
 import com.watabou.noosa.Image;
 import com.watabou.noosa.Visual;

@@ -19,9 +19,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.sprites;
+package cloud.sandino.judgementofthecangaceiro.sprites;
 
-import com.shatteredpixel.shatteredpixeldungeon.Assets;
+import cloud.sandino.judgementofthecangaceiro.Assets;
 import com.watabou.noosa.TextureFilm;
 
 public class GnollSapperSprite extends MobSprite {

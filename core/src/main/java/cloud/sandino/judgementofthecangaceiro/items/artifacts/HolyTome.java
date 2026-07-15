@@ -19,29 +19,29 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.items.artifacts;
+package cloud.sandino.judgementofthecangaceiro.items.artifacts;
 
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.MagicImmune;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Regeneration;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Talent;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.spells.ClericSpell;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.spells.GuidingLight;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.bags.Bag;
-import com.shatteredpixel.shatteredpixeldungeon.items.rings.RingOfEnergy;
-import com.shatteredpixel.shatteredpixeldungeon.journal.Catalog;
-import com.shatteredpixel.shatteredpixeldungeon.mechanics.Ballistica;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
-import com.shatteredpixel.shatteredpixeldungeon.ui.ActionIndicator;
-import com.shatteredpixel.shatteredpixeldungeon.ui.HeroIcon;
-import com.shatteredpixel.shatteredpixeldungeon.ui.QuickSlotButton;
-import com.shatteredpixel.shatteredpixeldungeon.utils.GLog;
-import com.shatteredpixel.shatteredpixeldungeon.windows.WndClericSpells;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.actors.Char;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.MagicImmune;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Regeneration;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.Hero;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.Talent;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.spells.ClericSpell;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.spells.GuidingLight;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.bags.Bag;
+import cloud.sandino.judgementofthecangaceiro.items.rings.RingOfEnergy;
+import cloud.sandino.judgementofthecangaceiro.journal.Catalog;
+import cloud.sandino.judgementofthecangaceiro.mechanics.Ballistica;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.scenes.GameScene;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.ui.ActionIndicator;
+import cloud.sandino.judgementofthecangaceiro.ui.HeroIcon;
+import cloud.sandino.judgementofthecangaceiro.ui.QuickSlotButton;
+import cloud.sandino.judgementofthecangaceiro.utils.GLog;
+import cloud.sandino.judgementofthecangaceiro.windows.WndClericSpells;
 import com.watabou.utils.Bundle;
 
 import java.util.ArrayList;

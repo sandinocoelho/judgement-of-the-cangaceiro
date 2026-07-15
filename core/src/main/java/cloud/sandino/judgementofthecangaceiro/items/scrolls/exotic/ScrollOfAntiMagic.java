@@ -19,12 +19,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.items.scrolls.exotic;
+package cloud.sandino.judgementofthecangaceiro.items.scrolls.exotic;
 
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Buff;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.MagicImmune;
-import com.shatteredpixel.shatteredpixeldungeon.effects.Flare;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Buff;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.MagicImmune;
+import cloud.sandino.judgementofthecangaceiro.effects.Flare;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
 
 public class ScrollOfAntiMagic extends ExoticScroll {
 	

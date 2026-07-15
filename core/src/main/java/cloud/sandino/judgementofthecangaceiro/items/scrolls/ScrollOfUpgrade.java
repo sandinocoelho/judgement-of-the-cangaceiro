@@ -19,28 +19,28 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.items.scrolls;
+package cloud.sandino.judgementofthecangaceiro.items.scrolls;
 
-import com.shatteredpixel.shatteredpixeldungeon.Badges;
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.Statistics;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Degrade;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Belongings;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
-import com.shatteredpixel.shatteredpixeldungeon.effects.Speck;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.ShadowParticle;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.armor.Armor;
-import com.shatteredpixel.shatteredpixeldungeon.items.rings.Ring;
-import com.shatteredpixel.shatteredpixeldungeon.items.wands.Wand;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.Weapon;
-import com.shatteredpixel.shatteredpixeldungeon.journal.Catalog;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
-import com.shatteredpixel.shatteredpixeldungeon.utils.GLog;
-import com.shatteredpixel.shatteredpixeldungeon.windows.WndBag;
-import com.shatteredpixel.shatteredpixeldungeon.windows.WndUpgrade;
+import cloud.sandino.judgementofthecangaceiro.Badges;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.Statistics;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Degrade;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.Belongings;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.Hero;
+import cloud.sandino.judgementofthecangaceiro.effects.Speck;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.ShadowParticle;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.armor.Armor;
+import cloud.sandino.judgementofthecangaceiro.items.rings.Ring;
+import cloud.sandino.judgementofthecangaceiro.items.wands.Wand;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.Weapon;
+import cloud.sandino.judgementofthecangaceiro.journal.Catalog;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.scenes.GameScene;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.utils.GLog;
+import cloud.sandino.judgementofthecangaceiro.windows.WndBag;
+import cloud.sandino.judgementofthecangaceiro.windows.WndUpgrade;
 
 public class ScrollOfUpgrade extends InventoryScroll {
 	

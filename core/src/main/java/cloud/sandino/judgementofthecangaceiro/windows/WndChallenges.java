@@ -19,18 +19,18 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.windows;
+package cloud.sandino.judgementofthecangaceiro.windows;
 
-import com.shatteredpixel.shatteredpixeldungeon.Challenges;
-import com.shatteredpixel.shatteredpixeldungeon.SPDSettings;
-import com.shatteredpixel.shatteredpixeldungeon.ShatteredPixelDungeon;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.PixelScene;
-import com.shatteredpixel.shatteredpixeldungeon.ui.CheckBox;
-import com.shatteredpixel.shatteredpixeldungeon.ui.IconButton;
-import com.shatteredpixel.shatteredpixeldungeon.ui.Icons;
-import com.shatteredpixel.shatteredpixeldungeon.ui.RenderedTextBlock;
-import com.shatteredpixel.shatteredpixeldungeon.ui.Window;
+import cloud.sandino.judgementofthecangaceiro.Challenges;
+import cloud.sandino.judgementofthecangaceiro.SPDSettings;
+import cloud.sandino.judgementofthecangaceiro.ShatteredPixelDungeon;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.scenes.PixelScene;
+import cloud.sandino.judgementofthecangaceiro.ui.CheckBox;
+import cloud.sandino.judgementofthecangaceiro.ui.IconButton;
+import cloud.sandino.judgementofthecangaceiro.ui.Icons;
+import cloud.sandino.judgementofthecangaceiro.ui.RenderedTextBlock;
+import cloud.sandino.judgementofthecangaceiro.ui.Window;
 
 import java.util.ArrayList;
 

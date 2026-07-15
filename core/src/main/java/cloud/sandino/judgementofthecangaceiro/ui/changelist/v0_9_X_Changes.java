@@ -19,29 +19,29 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.ui.changelist;
+package cloud.sandino.judgementofthecangaceiro.ui.changelist;
 
-import com.shatteredpixel.shatteredpixeldungeon.Assets;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.HeroSubClass;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Talent;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Spinner;
-import com.shatteredpixel.shatteredpixeldungeon.items.artifacts.ChaliceOfBlood;
-import com.shatteredpixel.shatteredpixeldungeon.items.artifacts.CloakOfShadows;
-import com.shatteredpixel.shatteredpixeldungeon.items.rings.RingOfEnergy;
-import com.shatteredpixel.shatteredpixeldungeon.items.wands.WandOfFrost;
-import com.shatteredpixel.shatteredpixeldungeon.items.wands.WandOfTransfusion;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.ChangesScene;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.CharSprite;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.FistSprite;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.GolemSprite;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSprite;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.SpawnerSprite;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.SpinnerSprite;
-import com.shatteredpixel.shatteredpixeldungeon.ui.Icons;
-import com.shatteredpixel.shatteredpixeldungeon.ui.TalentIcon;
-import com.shatteredpixel.shatteredpixeldungeon.ui.Window;
+import cloud.sandino.judgementofthecangaceiro.Assets;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.HeroSubClass;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.Talent;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Spinner;
+import cloud.sandino.judgementofthecangaceiro.items.artifacts.ChaliceOfBlood;
+import cloud.sandino.judgementofthecangaceiro.items.artifacts.CloakOfShadows;
+import cloud.sandino.judgementofthecangaceiro.items.rings.RingOfEnergy;
+import cloud.sandino.judgementofthecangaceiro.items.wands.WandOfFrost;
+import cloud.sandino.judgementofthecangaceiro.items.wands.WandOfTransfusion;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.scenes.ChangesScene;
+import cloud.sandino.judgementofthecangaceiro.sprites.CharSprite;
+import cloud.sandino.judgementofthecangaceiro.sprites.FistSprite;
+import cloud.sandino.judgementofthecangaceiro.sprites.GolemSprite;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSprite;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.sprites.SpawnerSprite;
+import cloud.sandino.judgementofthecangaceiro.sprites.SpinnerSprite;
+import cloud.sandino.judgementofthecangaceiro.ui.Icons;
+import cloud.sandino.judgementofthecangaceiro.ui.TalentIcon;
+import cloud.sandino.judgementofthecangaceiro.ui.Window;
 import com.watabou.noosa.Image;
 
 import java.util.ArrayList;

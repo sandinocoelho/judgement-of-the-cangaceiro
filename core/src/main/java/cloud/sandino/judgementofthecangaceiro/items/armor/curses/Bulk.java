@@ -19,14 +19,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.items.armor.curses;
+package cloud.sandino.judgementofthecangaceiro.items.armor.curses;
 
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.ShadowParticle;
-import com.shatteredpixel.shatteredpixeldungeon.items.armor.Armor;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Terrain;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSprite;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.actors.Char;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.ShadowParticle;
+import cloud.sandino.judgementofthecangaceiro.items.armor.Armor;
+import cloud.sandino.judgementofthecangaceiro.levels.Terrain;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSprite;
 
 public class Bulk extends Armor.Glyph {
 	

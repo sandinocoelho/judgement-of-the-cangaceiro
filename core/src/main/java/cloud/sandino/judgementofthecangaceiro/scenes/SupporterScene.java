@@ -19,19 +19,19 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.scenes;
+package cloud.sandino.judgementofthecangaceiro.scenes;
 
-import com.shatteredpixel.shatteredpixeldungeon.Chrome;
-import com.shatteredpixel.shatteredpixeldungeon.ShatteredPixelDungeon;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Languages;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.ui.ExitButton;
-import com.shatteredpixel.shatteredpixeldungeon.ui.Icons;
-import com.shatteredpixel.shatteredpixeldungeon.ui.TitleBackground;
-import com.shatteredpixel.shatteredpixeldungeon.ui.RenderedTextBlock;
-import com.shatteredpixel.shatteredpixeldungeon.ui.StyledButton;
-import com.shatteredpixel.shatteredpixeldungeon.ui.Window;
-import com.shatteredpixel.shatteredpixeldungeon.windows.IconTitle;
+import cloud.sandino.judgementofthecangaceiro.Chrome;
+import cloud.sandino.judgementofthecangaceiro.ShatteredPixelDungeon;
+import cloud.sandino.judgementofthecangaceiro.messages.Languages;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.ui.ExitButton;
+import cloud.sandino.judgementofthecangaceiro.ui.Icons;
+import cloud.sandino.judgementofthecangaceiro.ui.TitleBackground;
+import cloud.sandino.judgementofthecangaceiro.ui.RenderedTextBlock;
+import cloud.sandino.judgementofthecangaceiro.ui.StyledButton;
+import cloud.sandino.judgementofthecangaceiro.ui.Window;
+import cloud.sandino.judgementofthecangaceiro.windows.IconTitle;
 import com.watabou.noosa.Camera;
 import com.watabou.noosa.Image;
 import com.watabou.noosa.NinePatch;

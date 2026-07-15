@@ -19,20 +19,20 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.items.potions.brews;
+package cloud.sandino.judgementofthecangaceiro.items.potions.brews;
 
-import com.shatteredpixel.shatteredpixeldungeon.Assets;
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Actor;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Buff;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Ooze;
-import com.shatteredpixel.shatteredpixeldungeon.effects.Splash;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfToxicGas;
-import com.shatteredpixel.shatteredpixeldungeon.items.quest.GooBlob;
-import com.shatteredpixel.shatteredpixeldungeon.journal.Catalog;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.Assets;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.actors.Actor;
+import cloud.sandino.judgementofthecangaceiro.actors.Char;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Buff;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Ooze;
+import cloud.sandino.judgementofthecangaceiro.effects.Splash;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfToxicGas;
+import cloud.sandino.judgementofthecangaceiro.items.quest.GooBlob;
+import cloud.sandino.judgementofthecangaceiro.journal.Catalog;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
 import com.watabou.utils.BArray;
 import com.watabou.noosa.audio.Sample;
 import com.watabou.utils.PathFinder;
@@ -66,7 +66,7 @@ public class CausticBrew extends Brew {
 		}
 	}
 	
-	public static class Recipe extends com.shatteredpixel.shatteredpixeldungeon.items.Recipe.SimpleRecipe {
+	public static class Recipe extends cloud.sandino.judgementofthecangaceiro.items.Recipe.SimpleRecipe {
 		
 		{
 			inputs =  new Class[]{PotionOfToxicGas.class, GooBlob.class};

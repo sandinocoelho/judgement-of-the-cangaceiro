@@ -19,28 +19,28 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.levels;
+package cloud.sandino.judgementofthecangaceiro.levels;
 
-import com.shatteredpixel.shatteredpixeldungeon.Assets;
-import com.shatteredpixel.shatteredpixeldungeon.Bones;
-import com.shatteredpixel.shatteredpixeldungeon.Statistics;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Actor;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Goo;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Mob;
-import com.shatteredpixel.shatteredpixeldungeon.items.Heap;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.levels.builders.Builder;
-import com.shatteredpixel.shatteredpixeldungeon.levels.builders.FigureEightBuilder;
-import com.shatteredpixel.shatteredpixeldungeon.levels.painters.Painter;
-import com.shatteredpixel.shatteredpixeldungeon.levels.painters.SewerPainter;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.Room;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.secret.RatKingRoom;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.sewerboss.GooBossRoom;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.sewerboss.SewerBossEntranceRoom;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.sewerboss.SewerBossExitRoom;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.standard.StandardRoom;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
+import cloud.sandino.judgementofthecangaceiro.Assets;
+import cloud.sandino.judgementofthecangaceiro.Bones;
+import cloud.sandino.judgementofthecangaceiro.Statistics;
+import cloud.sandino.judgementofthecangaceiro.actors.Actor;
+import cloud.sandino.judgementofthecangaceiro.actors.Char;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Goo;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Mob;
+import cloud.sandino.judgementofthecangaceiro.items.Heap;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.levels.builders.Builder;
+import cloud.sandino.judgementofthecangaceiro.levels.builders.FigureEightBuilder;
+import cloud.sandino.judgementofthecangaceiro.levels.painters.Painter;
+import cloud.sandino.judgementofthecangaceiro.levels.painters.SewerPainter;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.Room;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.secret.RatKingRoom;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.sewerboss.GooBossRoom;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.sewerboss.SewerBossEntranceRoom;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.sewerboss.SewerBossExitRoom;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.standard.StandardRoom;
+import cloud.sandino.judgementofthecangaceiro.scenes.GameScene;
 import com.watabou.noosa.Game;
 import com.watabou.noosa.Group;
 import com.watabou.noosa.audio.Music;

@@ -19,40 +19,40 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.actors.mobs;
+package cloud.sandino.judgementofthecangaceiro.actors.mobs;
 
-import com.shatteredpixel.shatteredpixeldungeon.Assets;
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.Statistics;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Actor;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.Blob;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.Fire;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.Freezing;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Blindness;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Buff;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Burning;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Chill;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Invisibility;
-import com.shatteredpixel.shatteredpixeldungeon.effects.CellEmitter;
-import com.shatteredpixel.shatteredpixeldungeon.effects.Lightning;
-import com.shatteredpixel.shatteredpixeldungeon.effects.Splash;
-import com.shatteredpixel.shatteredpixeldungeon.effects.TargetedCell;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.ElmoParticle;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfFrost;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfLiquidFlame;
-import com.shatteredpixel.shatteredpixeldungeon.items.quest.Embers;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfRecharging;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfTransmutation;
-import com.shatteredpixel.shatteredpixeldungeon.items.trinkets.RatSkull;
-import com.shatteredpixel.shatteredpixeldungeon.items.wands.CursedWand;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.enchantments.Shocking;
-import com.shatteredpixel.shatteredpixeldungeon.mechanics.Ballistica;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.CharSprite;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ElementalSprite;
-import com.shatteredpixel.shatteredpixeldungeon.utils.GLog;
+import cloud.sandino.judgementofthecangaceiro.Assets;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.Statistics;
+import cloud.sandino.judgementofthecangaceiro.actors.Actor;
+import cloud.sandino.judgementofthecangaceiro.actors.Char;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.Blob;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.Fire;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.Freezing;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Blindness;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Buff;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Burning;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Chill;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Invisibility;
+import cloud.sandino.judgementofthecangaceiro.effects.CellEmitter;
+import cloud.sandino.judgementofthecangaceiro.effects.Lightning;
+import cloud.sandino.judgementofthecangaceiro.effects.Splash;
+import cloud.sandino.judgementofthecangaceiro.effects.TargetedCell;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.ElmoParticle;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfFrost;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfLiquidFlame;
+import cloud.sandino.judgementofthecangaceiro.items.quest.Embers;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.ScrollOfRecharging;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.ScrollOfTransmutation;
+import cloud.sandino.judgementofthecangaceiro.items.trinkets.RatSkull;
+import cloud.sandino.judgementofthecangaceiro.items.wands.CursedWand;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.enchantments.Shocking;
+import cloud.sandino.judgementofthecangaceiro.mechanics.Ballistica;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.scenes.GameScene;
+import cloud.sandino.judgementofthecangaceiro.sprites.CharSprite;
+import cloud.sandino.judgementofthecangaceiro.sprites.ElementalSprite;
+import cloud.sandino.judgementofthecangaceiro.utils.GLog;
 import com.watabou.noosa.Game;
 import com.watabou.noosa.audio.Music;
 import com.watabou.noosa.audio.Sample;
@@ -233,7 +233,7 @@ public abstract class Elemental extends Mob {
 			
 			properties.add( Property.FIERY );
 			
-			harmfulBuffs.add( com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Frost.class );
+			harmfulBuffs.add( cloud.sandino.judgementofthecangaceiro.actors.buffs.Frost.class );
 			harmfulBuffs.add( Chill.class );
 		}
 		

@@ -19,10 +19,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.windows;
+package cloud.sandino.judgementofthecangaceiro.windows;
 
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.npcs.NPC;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.npcs.NPC;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
 
 public class WndQuest extends WndTitledMessage {
 

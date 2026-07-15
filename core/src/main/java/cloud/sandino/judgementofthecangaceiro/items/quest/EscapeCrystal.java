@@ -19,24 +19,24 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.items.quest;
+package cloud.sandino.judgementofthecangaceiro.items.quest;
 
-import com.shatteredpixel.shatteredpixeldungeon.Assets;
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Buff;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.armor.ClassArmor;
-import com.shatteredpixel.shatteredpixeldungeon.items.artifacts.Artifact;
-import com.shatteredpixel.shatteredpixeldungeon.items.rings.Ring;
-import com.shatteredpixel.shatteredpixeldungeon.items.wands.Wand;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.melee.MeleeWeapon;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Level;
-import com.shatteredpixel.shatteredpixeldungeon.levels.VaultLevel;
-import com.shatteredpixel.shatteredpixeldungeon.levels.features.LevelTransition;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.InterlevelScene;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
-import com.shatteredpixel.shatteredpixeldungeon.ui.QuickSlotButton;
+import cloud.sandino.judgementofthecangaceiro.Assets;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Buff;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.Hero;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.armor.ClassArmor;
+import cloud.sandino.judgementofthecangaceiro.items.artifacts.Artifact;
+import cloud.sandino.judgementofthecangaceiro.items.rings.Ring;
+import cloud.sandino.judgementofthecangaceiro.items.wands.Wand;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.melee.MeleeWeapon;
+import cloud.sandino.judgementofthecangaceiro.levels.Level;
+import cloud.sandino.judgementofthecangaceiro.levels.VaultLevel;
+import cloud.sandino.judgementofthecangaceiro.levels.features.LevelTransition;
+import cloud.sandino.judgementofthecangaceiro.scenes.InterlevelScene;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.ui.QuickSlotButton;
 import com.watabou.noosa.Game;
 import com.watabou.noosa.audio.Sample;
 import com.watabou.utils.Bundle;

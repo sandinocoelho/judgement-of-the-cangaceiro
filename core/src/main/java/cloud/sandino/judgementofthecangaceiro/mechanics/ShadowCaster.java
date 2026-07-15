@@ -19,9 +19,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.mechanics;
+package cloud.sandino.judgementofthecangaceiro.mechanics;
 
-import com.shatteredpixel.shatteredpixeldungeon.ShatteredPixelDungeon;
+import cloud.sandino.judgementofthecangaceiro.ShatteredPixelDungeon;
 import com.watabou.utils.BArray;
 
 //based on: http://www.roguebasin.com/index.php?title=FOV_using_recursive_shadowcasting

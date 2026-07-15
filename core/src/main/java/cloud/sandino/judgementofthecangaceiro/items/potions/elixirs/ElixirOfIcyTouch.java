@@ -19,14 +19,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.items.potions.elixirs;
+package cloud.sandino.judgementofthecangaceiro.items.potions.elixirs;
 
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Buff;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.FrostImbue;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.SnowParticle;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.exotic.PotionOfSnapFreeze;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Buff;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.FrostImbue;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.Hero;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.SnowParticle;
+import cloud.sandino.judgementofthecangaceiro.items.potions.exotic.PotionOfSnapFreeze;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
 
 public class ElixirOfIcyTouch extends Elixir {
 	
@@ -40,7 +40,7 @@ public class ElixirOfIcyTouch extends Elixir {
 		hero.sprite.emitter().burst(SnowParticle.FACTORY, 5);
 	}
 	
-	public static class Recipe extends com.shatteredpixel.shatteredpixeldungeon.items.Recipe.SimpleRecipe {
+	public static class Recipe extends cloud.sandino.judgementofthecangaceiro.items.Recipe.SimpleRecipe {
 		
 		{
 			inputs =  new Class[]{PotionOfSnapFreeze.class};

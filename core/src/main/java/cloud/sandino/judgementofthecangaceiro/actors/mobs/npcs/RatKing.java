@@ -19,22 +19,22 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.actors.mobs.npcs;
+package cloud.sandino.judgementofthecangaceiro.actors.mobs.npcs;
 
-import com.shatteredpixel.shatteredpixeldungeon.Badges;
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.Statistics;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
-import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Buff;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.abilities.Ratmogrify;
-import com.shatteredpixel.shatteredpixeldungeon.items.KingsCrown;
-import com.shatteredpixel.shatteredpixeldungeon.journal.Notes;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.RatKingSprite;
-import com.shatteredpixel.shatteredpixeldungeon.utils.Holiday;
-import com.shatteredpixel.shatteredpixeldungeon.windows.WndInfoArmorAbility;
-import com.shatteredpixel.shatteredpixeldungeon.windows.WndOptions;
+import cloud.sandino.judgementofthecangaceiro.Badges;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.Statistics;
+import cloud.sandino.judgementofthecangaceiro.actors.Char;
+import cloud.sandino.judgementofthecangaceiro.actors.buffs.Buff;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.abilities.Ratmogrify;
+import cloud.sandino.judgementofthecangaceiro.items.KingsCrown;
+import cloud.sandino.judgementofthecangaceiro.journal.Notes;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.scenes.GameScene;
+import cloud.sandino.judgementofthecangaceiro.sprites.RatKingSprite;
+import cloud.sandino.judgementofthecangaceiro.utils.Holiday;
+import cloud.sandino.judgementofthecangaceiro.windows.WndInfoArmorAbility;
+import cloud.sandino.judgementofthecangaceiro.windows.WndOptions;
 import com.watabou.noosa.Game;
 import com.watabou.utils.Callback;
 

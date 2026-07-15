@@ -19,17 +19,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.levels.rooms.special;
+package cloud.sandino.judgementofthecangaceiro.levels.rooms.special;
 
-import com.shatteredpixel.shatteredpixeldungeon.Challenges;
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.items.Generator;
-import com.shatteredpixel.shatteredpixeldungeon.items.Heap;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.keys.CrystalKey;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Level;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Terrain;
-import com.shatteredpixel.shatteredpixeldungeon.levels.painters.Painter;
+import cloud.sandino.judgementofthecangaceiro.Challenges;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.items.Generator;
+import cloud.sandino.judgementofthecangaceiro.items.Heap;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.keys.CrystalKey;
+import cloud.sandino.judgementofthecangaceiro.levels.Level;
+import cloud.sandino.judgementofthecangaceiro.levels.Terrain;
+import cloud.sandino.judgementofthecangaceiro.levels.painters.Painter;
 import com.watabou.utils.Point;
 import com.watabou.utils.Random;
 

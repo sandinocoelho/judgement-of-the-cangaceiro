@@ -19,25 +19,25 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.actors.buffs;
+package cloud.sandino.judgementofthecangaceiro.actors.buffs;
 
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.Blizzard;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.ConfusionGas;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.CorrosiveGas;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.Electricity;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.Fire;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.Freezing;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.Inferno;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.ParalyticGas;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.Regrowth;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.SmokeScreen;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.StenchGas;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.StormCloud;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.ToxicGas;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.Web;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Tengu;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.special.MagicalFireRoom;
-import com.shatteredpixel.shatteredpixeldungeon.ui.BuffIndicator;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.Blizzard;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.ConfusionGas;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.CorrosiveGas;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.Electricity;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.Fire;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.Freezing;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.Inferno;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.ParalyticGas;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.Regrowth;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.SmokeScreen;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.StenchGas;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.StormCloud;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.ToxicGas;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.Web;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Tengu;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.special.MagicalFireRoom;
+import cloud.sandino.judgementofthecangaceiro.ui.BuffIndicator;
 
 public class BlobImmunity extends FlavourBuff {
 	

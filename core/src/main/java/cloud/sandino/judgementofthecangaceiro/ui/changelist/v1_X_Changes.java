@@ -19,34 +19,34 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.ui.changelist;
+package cloud.sandino.judgementofthecangaceiro.ui.changelist;
 
-import com.shatteredpixel.shatteredpixeldungeon.Assets;
-import com.shatteredpixel.shatteredpixeldungeon.Badges;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.HeroSubClass;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Talent;
-import com.shatteredpixel.shatteredpixeldungeon.effects.BadgeBanner;
-import com.shatteredpixel.shatteredpixeldungeon.items.artifacts.SandalsOfNature;
-import com.shatteredpixel.shatteredpixeldungeon.items.bombs.WoollyBomb;
-import com.shatteredpixel.shatteredpixeldungeon.items.rings.RingOfArcana;
-import com.shatteredpixel.shatteredpixeldungeon.items.rings.RingOfWealth;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.exotic.ScrollOfAntiMagic;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.exotic.ScrollOfMetamorphosis;
-import com.shatteredpixel.shatteredpixeldungeon.items.spells.TelekineticGrab;
-import com.shatteredpixel.shatteredpixeldungeon.items.wands.WandOfTransfusion;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.melee.MagesStaff;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.ChangesScene;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.CharSprite;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ElementalSprite;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSprite;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.SpectralNecromancerSprite;
-import com.shatteredpixel.shatteredpixeldungeon.ui.BuffIcon;
-import com.shatteredpixel.shatteredpixeldungeon.ui.BuffIndicator;
-import com.shatteredpixel.shatteredpixeldungeon.ui.Icons;
-import com.shatteredpixel.shatteredpixeldungeon.ui.TalentIcon;
-import com.shatteredpixel.shatteredpixeldungeon.ui.Window;
+import cloud.sandino.judgementofthecangaceiro.Assets;
+import cloud.sandino.judgementofthecangaceiro.Badges;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.HeroSubClass;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.Talent;
+import cloud.sandino.judgementofthecangaceiro.effects.BadgeBanner;
+import cloud.sandino.judgementofthecangaceiro.items.artifacts.SandalsOfNature;
+import cloud.sandino.judgementofthecangaceiro.items.bombs.WoollyBomb;
+import cloud.sandino.judgementofthecangaceiro.items.rings.RingOfArcana;
+import cloud.sandino.judgementofthecangaceiro.items.rings.RingOfWealth;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.exotic.ScrollOfAntiMagic;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.exotic.ScrollOfMetamorphosis;
+import cloud.sandino.judgementofthecangaceiro.items.spells.TelekineticGrab;
+import cloud.sandino.judgementofthecangaceiro.items.wands.WandOfTransfusion;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.melee.MagesStaff;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.scenes.ChangesScene;
+import cloud.sandino.judgementofthecangaceiro.sprites.CharSprite;
+import cloud.sandino.judgementofthecangaceiro.sprites.ElementalSprite;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSprite;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.sprites.SpectralNecromancerSprite;
+import cloud.sandino.judgementofthecangaceiro.ui.BuffIcon;
+import cloud.sandino.judgementofthecangaceiro.ui.BuffIndicator;
+import cloud.sandino.judgementofthecangaceiro.ui.Icons;
+import cloud.sandino.judgementofthecangaceiro.ui.TalentIcon;
+import cloud.sandino.judgementofthecangaceiro.ui.Window;
 import com.watabou.noosa.Image;
 
 import java.util.ArrayList;

@@ -19,30 +19,30 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.levels.traps;
+package cloud.sandino.judgementofthecangaceiro.levels.traps;
 
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Actor;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Acidic;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Albino;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.ArmoredBrute;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Bandit;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.CausticSlime;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.DM201;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Elemental;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Mimic;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Mob;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.MobSpawner;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Piranha;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Senior;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Statue;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Wraith;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.npcs.RatKing;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfTeleportation;
-import com.shatteredpixel.shatteredpixeldungeon.journal.Bestiary;
-import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.actors.Actor;
+import cloud.sandino.judgementofthecangaceiro.actors.Char;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.Hero;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Acidic;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Albino;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.ArmoredBrute;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Bandit;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.CausticSlime;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.DM201;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Elemental;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Mimic;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Mob;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.MobSpawner;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Piranha;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Senior;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Statue;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Wraith;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.npcs.RatKing;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.ScrollOfTeleportation;
+import cloud.sandino.judgementofthecangaceiro.journal.Bestiary;
+import cloud.sandino.judgementofthecangaceiro.scenes.GameScene;
 import com.watabou.utils.PathFinder;
 import com.watabou.utils.Random;
 import com.watabou.utils.Reflection;

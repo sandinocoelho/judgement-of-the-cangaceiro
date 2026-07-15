@@ -19,24 +19,24 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.levels;
+package cloud.sandino.judgementofthecangaceiro.levels;
 
-import com.shatteredpixel.shatteredpixeldungeon.Assets;
-import com.shatteredpixel.shatteredpixeldungeon.Bones;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Actor;
-import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Mob;
-import com.shatteredpixel.shatteredpixeldungeon.items.Heap;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.levels.builders.Builder;
-import com.shatteredpixel.shatteredpixeldungeon.levels.builders.LineBuilder;
-import com.shatteredpixel.shatteredpixeldungeon.levels.painters.CityPainter;
-import com.shatteredpixel.shatteredpixeldungeon.levels.painters.Painter;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.Room;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.standard.entrance.EntranceRoom;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.standard.exit.ExitRoom;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.standard.ImpShopRoom;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.Assets;
+import cloud.sandino.judgementofthecangaceiro.Bones;
+import cloud.sandino.judgementofthecangaceiro.actors.Actor;
+import cloud.sandino.judgementofthecangaceiro.actors.Char;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Mob;
+import cloud.sandino.judgementofthecangaceiro.items.Heap;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.levels.builders.Builder;
+import cloud.sandino.judgementofthecangaceiro.levels.builders.LineBuilder;
+import cloud.sandino.judgementofthecangaceiro.levels.painters.CityPainter;
+import cloud.sandino.judgementofthecangaceiro.levels.painters.Painter;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.Room;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.standard.entrance.EntranceRoom;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.standard.exit.ExitRoom;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.standard.ImpShopRoom;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
 import com.watabou.noosa.Group;
 import com.watabou.utils.Point;
 import com.watabou.utils.Random;

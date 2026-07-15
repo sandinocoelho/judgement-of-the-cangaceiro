@@ -19,7 +19,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.desktop;
+package cloud.sandino.judgementofthecangaceiro.desktop;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Graphics;
@@ -27,7 +27,7 @@ import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Graphics;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.g2d.PixmapPacker;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
-import com.shatteredpixel.shatteredpixeldungeon.SPDSettings;
+import cloud.sandino.judgementofthecangaceiro.SPDSettings;
 import com.watabou.input.ControllerHandler;
 import com.watabou.noosa.Game;
 import com.watabou.utils.PlatformSupport;

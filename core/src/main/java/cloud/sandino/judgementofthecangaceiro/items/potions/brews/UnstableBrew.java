@@ -19,27 +19,27 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.items.potions.brews;
+package cloud.sandino.judgementofthecangaceiro.items.potions.brews;
 
-import com.shatteredpixel.shatteredpixeldungeon.Challenges;
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.Potion;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfExperience;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfFrost;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfHaste;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfHealing;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfInvisibility;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfLevitation;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfLiquidFlame;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfMindVision;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfParalyticGas;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfPurity;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfToxicGas;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.exotic.ExoticPotion;
-import com.shatteredpixel.shatteredpixeldungeon.plants.Plant;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.Challenges;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.Hero;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.potions.Potion;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfExperience;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfFrost;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfHaste;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfHealing;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfInvisibility;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfLevitation;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfLiquidFlame;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfMindVision;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfParalyticGas;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfPurity;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfToxicGas;
+import cloud.sandino.judgementofthecangaceiro.items.potions.exotic.ExoticPotion;
+import cloud.sandino.judgementofthecangaceiro.plants.Plant;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
 import com.watabou.utils.Random;
 import com.watabou.utils.Reflection;
 
@@ -131,7 +131,7 @@ public class UnstableBrew extends Brew {
 		return 8 * quantity;
 	}
 
-	public static class Recipe extends com.shatteredpixel.shatteredpixeldungeon.items.Recipe {
+	public static class Recipe extends cloud.sandino.judgementofthecangaceiro.items.Recipe {
 		
 		@Override
 		public boolean testIngredients(ArrayList<Item> ingredients) {

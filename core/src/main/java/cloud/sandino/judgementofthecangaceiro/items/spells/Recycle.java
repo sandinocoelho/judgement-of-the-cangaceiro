@@ -19,27 +19,27 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.items.spells;
+package cloud.sandino.judgementofthecangaceiro.items.spells;
 
-import com.shatteredpixel.shatteredpixeldungeon.Challenges;
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.effects.Speck;
-import com.shatteredpixel.shatteredpixeldungeon.effects.Transmuting;
-import com.shatteredpixel.shatteredpixeldungeon.items.Generator;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.Potion;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.brews.Brew;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.elixirs.Elixir;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.exotic.ExoticPotion;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.Scroll;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfTransmutation;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.exotic.ExoticScroll;
-import com.shatteredpixel.shatteredpixeldungeon.items.stones.Runestone;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.darts.TippedDart;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.plants.Plant;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
-import com.shatteredpixel.shatteredpixeldungeon.utils.GLog;
+import cloud.sandino.judgementofthecangaceiro.Challenges;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.effects.Speck;
+import cloud.sandino.judgementofthecangaceiro.effects.Transmuting;
+import cloud.sandino.judgementofthecangaceiro.items.Generator;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.potions.Potion;
+import cloud.sandino.judgementofthecangaceiro.items.potions.brews.Brew;
+import cloud.sandino.judgementofthecangaceiro.items.potions.elixirs.Elixir;
+import cloud.sandino.judgementofthecangaceiro.items.potions.exotic.ExoticPotion;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.Scroll;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.ScrollOfTransmutation;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.exotic.ExoticScroll;
+import cloud.sandino.judgementofthecangaceiro.items.stones.Runestone;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.missiles.darts.TippedDart;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.plants.Plant;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.utils.GLog;
 import com.watabou.utils.Reflection;
 
 public class Recycle extends InventorySpell {
@@ -102,7 +102,7 @@ public class Recycle extends InventorySpell {
 		return (int)(12 * (quantity/(float)Recipe.OUT_QUANTITY));
 	}
 	
-	public static class Recipe extends com.shatteredpixel.shatteredpixeldungeon.items.Recipe.SimpleRecipe {
+	public static class Recipe extends cloud.sandino.judgementofthecangaceiro.items.Recipe.SimpleRecipe {
 
 		private static final int OUT_QUANTITY = 12;
 		

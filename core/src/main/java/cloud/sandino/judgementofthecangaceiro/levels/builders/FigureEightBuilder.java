@@ -19,10 +19,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.levels.builders;
+package cloud.sandino.judgementofthecangaceiro.levels.builders;
 
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.Room;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.connection.ConnectionRoom;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.Room;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.connection.ConnectionRoom;
 import com.watabou.utils.PointF;
 import com.watabou.utils.Random;
 

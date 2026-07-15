@@ -19,14 +19,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.levels.rooms.quest.vault;
+package cloud.sandino.judgementofthecangaceiro.levels.rooms.quest.vault;
 
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.npcs.VaultLaser;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Level;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Terrain;
-import com.shatteredpixel.shatteredpixeldungeon.levels.painters.Painter;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.Room;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.standard.StandardRoom;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.npcs.VaultLaser;
+import cloud.sandino.judgementofthecangaceiro.levels.Level;
+import cloud.sandino.judgementofthecangaceiro.levels.Terrain;
+import cloud.sandino.judgementofthecangaceiro.levels.painters.Painter;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.Room;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.standard.StandardRoom;
 import com.watabou.utils.Point;
 
 public class VaultQuadrantsRoom extends StandardRoom {

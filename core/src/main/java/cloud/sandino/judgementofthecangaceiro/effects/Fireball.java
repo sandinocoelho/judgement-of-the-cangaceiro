@@ -19,9 +19,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.effects;
+package cloud.sandino.judgementofthecangaceiro.effects;
 
-import com.shatteredpixel.shatteredpixeldungeon.scenes.PixelScene;
+import cloud.sandino.judgementofthecangaceiro.scenes.PixelScene;
 import com.watabou.noosa.MovieClip;
 import com.watabou.noosa.TextureFilm;
 

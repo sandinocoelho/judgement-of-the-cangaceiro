@@ -19,10 +19,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.sprites;
+package cloud.sandino.judgementofthecangaceiro.sprites;
 
-import com.shatteredpixel.shatteredpixeldungeon.Assets;
-import com.shatteredpixel.shatteredpixeldungeon.effects.Splash;
+import cloud.sandino.judgementofthecangaceiro.Assets;
+import cloud.sandino.judgementofthecangaceiro.effects.Splash;
 import com.watabou.noosa.TextureFilm;
 
 public class LarvaSprite extends MobSprite {

@@ -19,7 +19,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.ios;
+package cloud.sandino.judgementofthecangaceiro.ios;
 
 import com.badlogic.gdx.Files;
 import com.badlogic.gdx.backends.iosrobovm.DefaultIOSInput;
@@ -30,12 +30,12 @@ import com.badlogic.gdx.backends.iosrobovm.IOSPreferences;
 import com.badlogic.gdx.backends.iosrobovm.bindings.metalangle.MGLDrawableColorFormat;
 import com.badlogic.gdx.backends.iosrobovm.bindings.metalangle.MGLDrawableDepthFormat;
 import com.badlogic.gdx.graphics.glutils.HdpiMode;
-import com.shatteredpixel.shatteredpixeldungeon.SPDSettings;
-import com.shatteredpixel.shatteredpixeldungeon.ShatteredPixelDungeon;
-import com.shatteredpixel.shatteredpixeldungeon.services.news.News;
-import com.shatteredpixel.shatteredpixeldungeon.services.news.NewsImpl;
-import com.shatteredpixel.shatteredpixeldungeon.services.updates.UpdateImpl;
-import com.shatteredpixel.shatteredpixeldungeon.services.updates.Updates;
+import cloud.sandino.judgementofthecangaceiro.SPDSettings;
+import cloud.sandino.judgementofthecangaceiro.ShatteredPixelDungeon;
+import cloud.sandino.judgementofthecangaceiro.services.news.News;
+import cloud.sandino.judgementofthecangaceiro.services.news.NewsImpl;
+import cloud.sandino.judgementofthecangaceiro.services.updates.UpdateImpl;
+import cloud.sandino.judgementofthecangaceiro.services.updates.Updates;
 import com.watabou.noosa.Game;
 import com.watabou.utils.FileUtils;
 

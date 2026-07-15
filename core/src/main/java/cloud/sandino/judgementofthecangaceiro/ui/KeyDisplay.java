@@ -19,16 +19,16 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.ui;
+package cloud.sandino.judgementofthecangaceiro.ui;
 
-import com.shatteredpixel.shatteredpixeldungeon.Assets;
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.items.keys.CrystalKey;
-import com.shatteredpixel.shatteredpixeldungeon.items.keys.GoldenKey;
-import com.shatteredpixel.shatteredpixeldungeon.items.keys.IronKey;
-import com.shatteredpixel.shatteredpixeldungeon.items.keys.Key;
-import com.shatteredpixel.shatteredpixeldungeon.items.keys.WornKey;
-import com.shatteredpixel.shatteredpixeldungeon.journal.Notes;
+import cloud.sandino.judgementofthecangaceiro.Assets;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.items.keys.CrystalKey;
+import cloud.sandino.judgementofthecangaceiro.items.keys.GoldenKey;
+import cloud.sandino.judgementofthecangaceiro.items.keys.IronKey;
+import cloud.sandino.judgementofthecangaceiro.items.keys.Key;
+import cloud.sandino.judgementofthecangaceiro.items.keys.WornKey;
+import cloud.sandino.judgementofthecangaceiro.journal.Notes;
 import com.watabou.gltextures.SmartTexture;
 import com.watabou.gltextures.TextureCache;
 import com.watabou.glwrap.Quad;

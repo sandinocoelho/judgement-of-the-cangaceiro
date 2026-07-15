@@ -19,13 +19,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.messages;
+package cloud.sandino.judgementofthecangaceiro.messages;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.utils.I18NBundle;
-import com.shatteredpixel.shatteredpixeldungeon.Assets;
-import com.shatteredpixel.shatteredpixeldungeon.SPDSettings;
-import com.shatteredpixel.shatteredpixeldungeon.ShatteredPixelDungeon;
+import cloud.sandino.judgementofthecangaceiro.Assets;
+import cloud.sandino.judgementofthecangaceiro.SPDSettings;
+import cloud.sandino.judgementofthecangaceiro.ShatteredPixelDungeon;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
@@ -125,7 +125,7 @@ public class Messages {
 	public static String get(Class c, String k, Object...args){
 		String key;
 		if (c != null){
-			key = c.getName().replace("com.shatteredpixel.shatteredpixeldungeon.", "");
+			key = c.getName().replace("cloud.sandino.judgementofthecangaceiro.", "");
 			key += "." + k;
 		} else
 			key = k;

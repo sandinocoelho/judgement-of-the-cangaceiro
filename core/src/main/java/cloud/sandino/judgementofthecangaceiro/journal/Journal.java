@@ -19,9 +19,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.journal;
+package cloud.sandino.judgementofthecangaceiro.journal;
 
-import com.shatteredpixel.shatteredpixeldungeon.ShatteredPixelDungeon;
+import cloud.sandino.judgementofthecangaceiro.ShatteredPixelDungeon;
 import com.watabou.utils.Bundle;
 import com.watabou.utils.FileUtils;
 

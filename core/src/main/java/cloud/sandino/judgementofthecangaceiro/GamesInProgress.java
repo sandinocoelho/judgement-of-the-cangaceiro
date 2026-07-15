@@ -19,11 +19,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon;
+package cloud.sandino.judgementofthecangaceiro;
 
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.HeroClass;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.HeroSubClass;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.HeroClass;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.HeroSubClass;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
 import com.watabou.utils.Bundle;
 import com.watabou.utils.FileUtils;
 

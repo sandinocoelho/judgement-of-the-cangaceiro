@@ -19,11 +19,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.sprites;
+package cloud.sandino.judgementofthecangaceiro.sprites;
 
-import com.shatteredpixel.shatteredpixeldungeon.Assets;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Warlock;
-import com.shatteredpixel.shatteredpixeldungeon.effects.MagicMissile;
+import cloud.sandino.judgementofthecangaceiro.Assets;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.Warlock;
+import cloud.sandino.judgementofthecangaceiro.effects.MagicMissile;
 import com.watabou.noosa.TextureFilm;
 import com.watabou.noosa.audio.Sample;
 import com.watabou.utils.Callback;

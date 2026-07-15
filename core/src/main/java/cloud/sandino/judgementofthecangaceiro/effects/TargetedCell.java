@@ -19,10 +19,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.effects;
+package cloud.sandino.judgementofthecangaceiro.effects;
 
-import com.shatteredpixel.shatteredpixeldungeon.tiles.DungeonTilemap;
-import com.shatteredpixel.shatteredpixeldungeon.ui.Icons;
+import cloud.sandino.judgementofthecangaceiro.tiles.DungeonTilemap;
+import cloud.sandino.judgementofthecangaceiro.ui.Icons;
 import com.watabou.noosa.Game;
 import com.watabou.noosa.Image;
 

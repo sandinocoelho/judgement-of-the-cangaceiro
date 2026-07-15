@@ -19,10 +19,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon;
+package cloud.sandino.judgementofthecangaceiro;
 
-import com.shatteredpixel.shatteredpixeldungeon.items.Dewdrop;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.Dewdrop;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
 
 public class Challenges {
 

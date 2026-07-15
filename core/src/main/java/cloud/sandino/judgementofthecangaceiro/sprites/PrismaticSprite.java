@@ -19,9 +19,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.sprites;
+package cloud.sandino.judgementofthecangaceiro.sprites;
 
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.npcs.PrismaticImage;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.npcs.PrismaticImage;
 import com.watabou.noosa.Game;
 
 public class PrismaticSprite extends MirrorSprite {

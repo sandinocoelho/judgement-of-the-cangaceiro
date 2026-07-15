@@ -19,7 +19,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.desktop;
+package cloud.sandino.judgementofthecangaceiro.desktop;
 
 import com.badlogic.gdx.Files;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
@@ -29,12 +29,12 @@ import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Preferences;
 import com.badlogic.gdx.utils.Architecture;
 import com.badlogic.gdx.utils.Os;
 import com.badlogic.gdx.utils.SharedLibraryLoader;
-import com.shatteredpixel.shatteredpixeldungeon.SPDSettings;
-import com.shatteredpixel.shatteredpixeldungeon.ShatteredPixelDungeon;
-import com.shatteredpixel.shatteredpixeldungeon.services.news.News;
-import com.shatteredpixel.shatteredpixeldungeon.services.news.NewsImpl;
-import com.shatteredpixel.shatteredpixeldungeon.services.updates.UpdateImpl;
-import com.shatteredpixel.shatteredpixeldungeon.services.updates.Updates;
+import cloud.sandino.judgementofthecangaceiro.SPDSettings;
+import cloud.sandino.judgementofthecangaceiro.ShatteredPixelDungeon;
+import cloud.sandino.judgementofthecangaceiro.services.news.News;
+import cloud.sandino.judgementofthecangaceiro.services.news.NewsImpl;
+import cloud.sandino.judgementofthecangaceiro.services.updates.UpdateImpl;
+import cloud.sandino.judgementofthecangaceiro.services.updates.Updates;
 import com.watabou.noosa.Game;
 import com.watabou.utils.FileUtils;
 import com.watabou.utils.Point;
@@ -82,7 +82,7 @@ public class DesktopLauncher {
 
 				//shorten/simplify exception message to make it easier to fit into a message box
 				exceptionMsg = exceptionMsg.replaceAll("\\(.*:([0-9]*)\\)", "($1)");
-				exceptionMsg = exceptionMsg.replace("com.shatteredpixel.shatteredpixeldungeon.", "");
+				exceptionMsg = exceptionMsg.replace("cloud.sandino.judgementofthecangaceiro.", "");
 				exceptionMsg = exceptionMsg.replace("com.watabou.", "");
 				exceptionMsg = exceptionMsg.replace("com.badlogic.gdx.", "");
 				exceptionMsg = exceptionMsg.replace("\t", "  "); //shortens length of tabs

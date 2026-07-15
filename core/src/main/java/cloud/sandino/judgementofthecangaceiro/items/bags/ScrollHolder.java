@@ -19,16 +19,16 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.items.bags;
+package cloud.sandino.judgementofthecangaceiro.items.bags;
 
-import com.shatteredpixel.shatteredpixeldungeon.items.ArcaneResin;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.Stylus;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.Scroll;
-import com.shatteredpixel.shatteredpixeldungeon.items.spells.BeaconOfReturning;
-import com.shatteredpixel.shatteredpixeldungeon.items.spells.Spell;
-import com.shatteredpixel.shatteredpixeldungeon.journal.Notes;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.items.ArcaneResin;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.Stylus;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.Scroll;
+import cloud.sandino.judgementofthecangaceiro.items.spells.BeaconOfReturning;
+import cloud.sandino.judgementofthecangaceiro.items.spells.Spell;
+import cloud.sandino.judgementofthecangaceiro.journal.Notes;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
 
 public class ScrollHolder extends Bag {
 

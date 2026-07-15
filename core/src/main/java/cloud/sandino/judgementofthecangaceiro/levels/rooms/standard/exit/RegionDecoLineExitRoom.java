@@ -19,9 +19,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.levels.rooms.standard.exit;
+package cloud.sandino.judgementofthecangaceiro.levels.rooms.standard.exit;
 
-import com.shatteredpixel.shatteredpixeldungeon.levels.Terrain;
+import cloud.sandino.judgementofthecangaceiro.levels.Terrain;
 
 public class RegionDecoLineExitRoom extends StatueLineExitRoom {
 

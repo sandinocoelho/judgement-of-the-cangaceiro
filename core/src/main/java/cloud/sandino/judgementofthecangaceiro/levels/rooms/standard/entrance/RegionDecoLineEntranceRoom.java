@@ -19,9 +19,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.levels.rooms.standard.entrance;
+package cloud.sandino.judgementofthecangaceiro.levels.rooms.standard.entrance;
 
-import com.shatteredpixel.shatteredpixeldungeon.levels.Terrain;
+import cloud.sandino.judgementofthecangaceiro.levels.Terrain;
 
 public class RegionDecoLineEntranceRoom extends StatueLineEntranceRoom {
 

@@ -19,14 +19,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.levels.painters;
+package cloud.sandino.judgementofthecangaceiro.levels.painters;
 
-import com.shatteredpixel.shatteredpixeldungeon.levels.Level;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Terrain;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.Room;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.special.SpecialRoom;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.standard.ChasmBridgeRoom;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.standard.FissureRoom;
+import cloud.sandino.judgementofthecangaceiro.levels.Level;
+import cloud.sandino.judgementofthecangaceiro.levels.Terrain;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.Room;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.special.SpecialRoom;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.standard.ChasmBridgeRoom;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.standard.FissureRoom;
 import com.watabou.utils.Random;
 
 import java.util.ArrayList;

@@ -19,9 +19,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.levels.rooms.standard;
+package cloud.sandino.judgementofthecangaceiro.levels.rooms.standard;
 
-import com.shatteredpixel.shatteredpixeldungeon.levels.Terrain;
+import cloud.sandino.judgementofthecangaceiro.levels.Terrain;
 import com.watabou.utils.Point;
 
 public class WaterBridgeRoom extends StandardBridgeRoom {

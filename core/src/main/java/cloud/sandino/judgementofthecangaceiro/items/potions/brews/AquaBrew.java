@@ -19,12 +19,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.items.potions.brews;
+package cloud.sandino.judgementofthecangaceiro.items.potions.brews;
 
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.exotic.PotionOfStormClouds;
-import com.shatteredpixel.shatteredpixeldungeon.levels.traps.GeyserTrap;
-import com.shatteredpixel.shatteredpixeldungeon.mechanics.Ballistica;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.items.potions.exotic.PotionOfStormClouds;
+import cloud.sandino.judgementofthecangaceiro.levels.traps.GeyserTrap;
+import cloud.sandino.judgementofthecangaceiro.mechanics.Ballistica;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
 
 public class AquaBrew extends Brew {
 
@@ -60,7 +60,7 @@ public class AquaBrew extends Brew {
 		return (int)(12 * (quantity/(float)Recipe.OUT_QUANTITY));
 	}
 
-	public static class Recipe extends com.shatteredpixel.shatteredpixeldungeon.items.Recipe.SimpleRecipe {
+	public static class Recipe extends cloud.sandino.judgementofthecangaceiro.items.Recipe.SimpleRecipe {
 
 		private static final int OUT_QUANTITY = 8;
 

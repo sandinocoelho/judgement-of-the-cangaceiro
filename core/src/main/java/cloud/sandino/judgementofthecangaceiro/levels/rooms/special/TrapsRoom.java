@@ -19,28 +19,28 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.levels.rooms.special;
+package cloud.sandino.judgementofthecangaceiro.levels.rooms.special;
 
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.items.Generator;
-import com.shatteredpixel.shatteredpixeldungeon.items.Heap;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.armor.Armor;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfLevitation;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.Weapon;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Level;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Terrain;
-import com.shatteredpixel.shatteredpixeldungeon.levels.painters.Painter;
-import com.shatteredpixel.shatteredpixeldungeon.levels.traps.DisintegrationTrap;
-import com.shatteredpixel.shatteredpixeldungeon.levels.traps.ExplosiveTrap;
-import com.shatteredpixel.shatteredpixeldungeon.levels.traps.FlashingTrap;
-import com.shatteredpixel.shatteredpixeldungeon.levels.traps.FlockTrap;
-import com.shatteredpixel.shatteredpixeldungeon.levels.traps.GrimTrap;
-import com.shatteredpixel.shatteredpixeldungeon.levels.traps.GrippingTrap;
-import com.shatteredpixel.shatteredpixeldungeon.levels.traps.PoisonDartTrap;
-import com.shatteredpixel.shatteredpixeldungeon.levels.traps.TeleportationTrap;
-import com.shatteredpixel.shatteredpixeldungeon.levels.traps.Trap;
-import com.shatteredpixel.shatteredpixeldungeon.levels.traps.WarpingTrap;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.items.Generator;
+import cloud.sandino.judgementofthecangaceiro.items.Heap;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.armor.Armor;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfLevitation;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.Weapon;
+import cloud.sandino.judgementofthecangaceiro.levels.Level;
+import cloud.sandino.judgementofthecangaceiro.levels.Terrain;
+import cloud.sandino.judgementofthecangaceiro.levels.painters.Painter;
+import cloud.sandino.judgementofthecangaceiro.levels.traps.DisintegrationTrap;
+import cloud.sandino.judgementofthecangaceiro.levels.traps.ExplosiveTrap;
+import cloud.sandino.judgementofthecangaceiro.levels.traps.FlashingTrap;
+import cloud.sandino.judgementofthecangaceiro.levels.traps.FlockTrap;
+import cloud.sandino.judgementofthecangaceiro.levels.traps.GrimTrap;
+import cloud.sandino.judgementofthecangaceiro.levels.traps.GrippingTrap;
+import cloud.sandino.judgementofthecangaceiro.levels.traps.PoisonDartTrap;
+import cloud.sandino.judgementofthecangaceiro.levels.traps.TeleportationTrap;
+import cloud.sandino.judgementofthecangaceiro.levels.traps.Trap;
+import cloud.sandino.judgementofthecangaceiro.levels.traps.WarpingTrap;
 import com.watabou.utils.Point;
 import com.watabou.utils.Random;
 import com.watabou.utils.Reflection;

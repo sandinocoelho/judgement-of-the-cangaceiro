@@ -19,26 +19,26 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.items.spells;
+package cloud.sandino.judgementofthecangaceiro.items.spells;
 
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.Scroll;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfIdentify;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfLullaby;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfMagicMapping;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfMirrorImage;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfRage;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfRecharging;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfRemoveCurse;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfRetribution;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfTeleportation;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfTerror;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfTransmutation;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.exotic.ExoticScroll;
-import com.shatteredpixel.shatteredpixeldungeon.items.stones.Runestone;
-import com.shatteredpixel.shatteredpixeldungeon.journal.Catalog;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.Hero;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.Scroll;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.ScrollOfIdentify;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.ScrollOfLullaby;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.ScrollOfMagicMapping;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.ScrollOfMirrorImage;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.ScrollOfRage;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.ScrollOfRecharging;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.ScrollOfRemoveCurse;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.ScrollOfRetribution;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.ScrollOfTeleportation;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.ScrollOfTerror;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.ScrollOfTransmutation;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.exotic.ExoticScroll;
+import cloud.sandino.judgementofthecangaceiro.items.stones.Runestone;
+import cloud.sandino.judgementofthecangaceiro.journal.Catalog;
+import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
 import com.watabou.utils.Random;
 import com.watabou.utils.Reflection;
 
@@ -128,7 +128,7 @@ public class UnstableSpell extends Spell {
 		return 8 * quantity;
 	}
 
-	public static class Recipe extends com.shatteredpixel.shatteredpixeldungeon.items.Recipe {
+	public static class Recipe extends cloud.sandino.judgementofthecangaceiro.items.Recipe {
 
 		@Override
 		public boolean testIngredients(ArrayList<Item> ingredients) {

@@ -19,15 +19,15 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.levels.rooms.secret;
+package cloud.sandino.judgementofthecangaceiro.levels.rooms.secret;
 
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.Foliage;
-import com.shatteredpixel.shatteredpixeldungeon.items.wands.WandOfRegrowth;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Level;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Patch;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Terrain;
-import com.shatteredpixel.shatteredpixeldungeon.levels.painters.Painter;
-import com.shatteredpixel.shatteredpixeldungeon.plants.Starflower;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.Foliage;
+import cloud.sandino.judgementofthecangaceiro.items.wands.WandOfRegrowth;
+import cloud.sandino.judgementofthecangaceiro.levels.Level;
+import cloud.sandino.judgementofthecangaceiro.levels.Patch;
+import cloud.sandino.judgementofthecangaceiro.levels.Terrain;
+import cloud.sandino.judgementofthecangaceiro.levels.painters.Painter;
+import cloud.sandino.judgementofthecangaceiro.plants.Starflower;
 import com.watabou.utils.Random;
 
 public class SecretGardenRoom extends SecretRoom {

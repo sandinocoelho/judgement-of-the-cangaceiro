@@ -19,25 +19,25 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.scenes;
+package cloud.sandino.judgementofthecangaceiro.scenes;
 
-import com.shatteredpixel.shatteredpixeldungeon.Assets;
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.HeroClass;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.abilities.Ratmogrify;
-import com.shatteredpixel.shatteredpixeldungeon.items.artifacts.DriedRose;
-import com.shatteredpixel.shatteredpixeldungeon.items.remains.RemainsItem;
-import com.shatteredpixel.shatteredpixeldungeon.items.wands.WandOfLivingEarth;
-import com.shatteredpixel.shatteredpixeldungeon.items.wands.WandOfWarding;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.melee.MagesStaff;
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.CharSprite;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.EarthGuardianSprite;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.GhostSprite;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.RatSprite;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.WardSprite;
-import com.shatteredpixel.shatteredpixeldungeon.ui.TitleBackground;
-import com.shatteredpixel.shatteredpixeldungeon.ui.RedButton;
+import cloud.sandino.judgementofthecangaceiro.Assets;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.HeroClass;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.abilities.Ratmogrify;
+import cloud.sandino.judgementofthecangaceiro.items.artifacts.DriedRose;
+import cloud.sandino.judgementofthecangaceiro.items.remains.RemainsItem;
+import cloud.sandino.judgementofthecangaceiro.items.wands.WandOfLivingEarth;
+import cloud.sandino.judgementofthecangaceiro.items.wands.WandOfWarding;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.melee.MagesStaff;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.sprites.CharSprite;
+import cloud.sandino.judgementofthecangaceiro.sprites.EarthGuardianSprite;
+import cloud.sandino.judgementofthecangaceiro.sprites.GhostSprite;
+import cloud.sandino.judgementofthecangaceiro.sprites.RatSprite;
+import cloud.sandino.judgementofthecangaceiro.sprites.WardSprite;
+import cloud.sandino.judgementofthecangaceiro.ui.TitleBackground;
+import cloud.sandino.judgementofthecangaceiro.ui.RedButton;
 import com.watabou.gltextures.SmartTexture;
 import com.watabou.gltextures.TextureCache;
 import com.watabou.glwrap.Matrix;

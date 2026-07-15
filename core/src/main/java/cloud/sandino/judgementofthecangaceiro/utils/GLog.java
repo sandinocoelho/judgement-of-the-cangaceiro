@@ -19,9 +19,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.utils;
+package cloud.sandino.judgementofthecangaceiro.utils;
 
-import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
+import cloud.sandino.judgementofthecangaceiro.messages.Messages;
 import com.watabou.utils.DeviceCompat;
 import com.watabou.utils.Signal;
 

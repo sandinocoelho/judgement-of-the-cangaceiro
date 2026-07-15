@@ -19,20 +19,20 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.effects;
+package cloud.sandino.judgementofthecangaceiro.effects;
 
-import com.shatteredpixel.shatteredpixeldungeon.actors.Actor;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.BloodParticle;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.CorrosionParticle;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.ElmoParticle;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.FlameParticle;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.LeafParticle;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.PoisonParticle;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.PurpleParticle;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.RainbowParticle;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.ShadowParticle;
-import com.shatteredpixel.shatteredpixeldungeon.effects.particles.SparkParticle;
-import com.shatteredpixel.shatteredpixeldungeon.tiles.DungeonTilemap;
+import cloud.sandino.judgementofthecangaceiro.actors.Actor;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.BloodParticle;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.CorrosionParticle;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.ElmoParticle;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.FlameParticle;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.LeafParticle;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.PoisonParticle;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.PurpleParticle;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.RainbowParticle;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.ShadowParticle;
+import cloud.sandino.judgementofthecangaceiro.effects.particles.SparkParticle;
+import cloud.sandino.judgementofthecangaceiro.tiles.DungeonTilemap;
 import com.watabou.noosa.Game;
 import com.watabou.noosa.Group;
 import com.watabou.noosa.Visual;

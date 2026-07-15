@@ -19,26 +19,26 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.sprites;
+package cloud.sandino.judgementofthecangaceiro.sprites;
 
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.actors.hero.spells.HolyLance;
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.GnollGeomancer;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.SpiritBow;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.melee.Crossbow;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.Bolas;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.FishingSpear;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.HeavyBoomerang;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.Javelin;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.Kunai;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.Shuriken;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.ThrowingKnife;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.ThrowingSpear;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.ThrowingSpike;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.Trident;
-import com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.darts.Dart;
-import com.shatteredpixel.shatteredpixeldungeon.tiles.DungeonTilemap;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.actors.hero.spells.HolyLance;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.GnollGeomancer;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.SpiritBow;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.melee.Crossbow;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.missiles.Bolas;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.missiles.FishingSpear;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.missiles.HeavyBoomerang;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.missiles.Javelin;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.missiles.Kunai;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.missiles.Shuriken;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.missiles.ThrowingKnife;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.missiles.ThrowingSpear;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.missiles.ThrowingSpike;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.missiles.Trident;
+import cloud.sandino.judgementofthecangaceiro.items.weapon.missiles.darts.Dart;
+import cloud.sandino.judgementofthecangaceiro.tiles.DungeonTilemap;
 import com.watabou.noosa.Visual;
 import com.watabou.noosa.tweeners.PosTweener;
 import com.watabou.noosa.tweeners.Tweener;

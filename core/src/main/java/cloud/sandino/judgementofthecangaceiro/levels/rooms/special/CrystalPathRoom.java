@@ -19,23 +19,23 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.levels.rooms.special;
+package cloud.sandino.judgementofthecangaceiro.levels.rooms.special;
 
-import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
-import com.shatteredpixel.shatteredpixeldungeon.items.Generator;
-import com.shatteredpixel.shatteredpixeldungeon.items.Item;
-import com.shatteredpixel.shatteredpixeldungeon.items.keys.CrystalKey;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfExperience;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.exotic.ExoticPotion;
-import com.shatteredpixel.shatteredpixeldungeon.items.potions.exotic.PotionOfDivineInspiration;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfTransmutation;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.exotic.ExoticScroll;
-import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.exotic.ScrollOfMetamorphosis;
-import com.shatteredpixel.shatteredpixeldungeon.items.trinkets.ExoticCrystals;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Level;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Terrain;
-import com.shatteredpixel.shatteredpixeldungeon.levels.painters.Painter;
-import com.shatteredpixel.shatteredpixeldungeon.levels.rooms.standard.EmptyRoom;
+import cloud.sandino.judgementofthecangaceiro.Dungeon;
+import cloud.sandino.judgementofthecangaceiro.items.Generator;
+import cloud.sandino.judgementofthecangaceiro.items.Item;
+import cloud.sandino.judgementofthecangaceiro.items.keys.CrystalKey;
+import cloud.sandino.judgementofthecangaceiro.items.potions.PotionOfExperience;
+import cloud.sandino.judgementofthecangaceiro.items.potions.exotic.ExoticPotion;
+import cloud.sandino.judgementofthecangaceiro.items.potions.exotic.PotionOfDivineInspiration;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.ScrollOfTransmutation;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.exotic.ExoticScroll;
+import cloud.sandino.judgementofthecangaceiro.items.scrolls.exotic.ScrollOfMetamorphosis;
+import cloud.sandino.judgementofthecangaceiro.items.trinkets.ExoticCrystals;
+import cloud.sandino.judgementofthecangaceiro.levels.Level;
+import cloud.sandino.judgementofthecangaceiro.levels.Terrain;
+import cloud.sandino.judgementofthecangaceiro.levels.painters.Painter;
+import cloud.sandino.judgementofthecangaceiro.levels.rooms.standard.EmptyRoom;
 import com.watabou.utils.Point;
 import com.watabou.utils.Random;
 

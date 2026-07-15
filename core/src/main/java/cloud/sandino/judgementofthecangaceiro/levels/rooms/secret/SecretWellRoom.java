@@ -19,14 +19,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.levels.rooms.secret;
+package cloud.sandino.judgementofthecangaceiro.levels.rooms.secret;
 
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.WaterOfAwareness;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.WaterOfHealth;
-import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.WellWater;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Level;
-import com.shatteredpixel.shatteredpixeldungeon.levels.Terrain;
-import com.shatteredpixel.shatteredpixeldungeon.levels.painters.Painter;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.WaterOfAwareness;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.WaterOfHealth;
+import cloud.sandino.judgementofthecangaceiro.actors.blobs.WellWater;
+import cloud.sandino.judgementofthecangaceiro.levels.Level;
+import cloud.sandino.judgementofthecangaceiro.levels.Terrain;
+import cloud.sandino.judgementofthecangaceiro.levels.painters.Painter;
 import com.watabou.utils.Point;
 import com.watabou.utils.Random;
 

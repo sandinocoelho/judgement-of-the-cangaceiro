@@ -19,10 +19,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.actors.mobs;
+package cloud.sandino.judgementofthecangaceiro.actors.mobs;
 
-import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.npcs.Blacksmith;
-import com.shatteredpixel.shatteredpixeldungeon.sprites.FungalCoreSprite;
+import cloud.sandino.judgementofthecangaceiro.actors.mobs.npcs.Blacksmith;
+import cloud.sandino.judgementofthecangaceiro.sprites.FungalCoreSprite;
 
 public class FungalCore extends Mob {
 

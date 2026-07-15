@@ -19,7 +19,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.android;
+package cloud.sandino.judgementofthecangaceiro.android;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -40,13 +40,13 @@ import com.badlogic.gdx.backends.android.AndroidAudio;
 import com.badlogic.gdx.backends.android.AsynchronousAndroidAudio;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeType;
 import com.badlogic.gdx.utils.GdxNativesLoader;
-import com.shatteredpixel.shatteredpixeldungeon.SPDSettings;
-import com.shatteredpixel.shatteredpixeldungeon.ShatteredPixelDungeon;
-import com.shatteredpixel.shatteredpixeldungeon.services.news.News;
-import com.shatteredpixel.shatteredpixeldungeon.services.news.NewsImpl;
-import com.shatteredpixel.shatteredpixeldungeon.services.updates.UpdateImpl;
-import com.shatteredpixel.shatteredpixeldungeon.services.updates.Updates;
-import com.shatteredpixel.shatteredpixeldungeon.ui.Button;
+import cloud.sandino.judgementofthecangaceiro.SPDSettings;
+import cloud.sandino.judgementofthecangaceiro.ShatteredPixelDungeon;
+import cloud.sandino.judgementofthecangaceiro.services.news.News;
+import cloud.sandino.judgementofthecangaceiro.services.news.NewsImpl;
+import cloud.sandino.judgementofthecangaceiro.services.updates.UpdateImpl;
+import cloud.sandino.judgementofthecangaceiro.services.updates.Updates;
+import cloud.sandino.judgementofthecangaceiro.ui.Button;
 import com.watabou.input.KeyEvent;
 import com.watabou.noosa.Game;
 import com.watabou.utils.FileUtils;

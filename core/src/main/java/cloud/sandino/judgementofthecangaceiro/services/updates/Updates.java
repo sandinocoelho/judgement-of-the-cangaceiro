@@ -19,9 +19,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.shatteredpixel.shatteredpixeldungeon.services.updates;
+package cloud.sandino.judgementofthecangaceiro.services.updates;
 
-import com.shatteredpixel.shatteredpixeldungeon.SPDSettings;
+import cloud.sandino.judgementofthecangaceiro.SPDSettings;
 import com.watabou.utils.Callback;
 
 import java.util.Date;
