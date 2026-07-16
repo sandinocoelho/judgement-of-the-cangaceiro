@@ -1,42 +1,42 @@
 # Processo de desenvolvimento — Judgement of the Cangaceiro
 
-> Ticket: E6/CANGA-27. Consolida o que E2 (remotes), E4 (mirror por release) e E5 (política de branching + proteções) definiram. Onde algo ainda não foi implementado (marcado **[PENDENTE]** abaixo), este documento registra o desenho já decidido, não uma garantia de que já funciona.
+> Ticket: E6/CANGA-27. Consolida o que E2 (remotes), E4 (mirror por release), E5 (política de branching + proteções), E8 (CI de MR) e E9 (CD por tag) definiram — **tudo implementado e validado em 2026-07-16** (o E9 foi ensaiado ponta-a-ponta com uma tag de teste antes da primeira release real).
 
 ## Mapa de plataformas
 
 | Plataforma | Papel | Visibilidade |
 |---|---|---|
-| **GitLab** (`gitlab.com/cloud.sandino/judgement-of-the-cangaceiro`) | Desenvolvimento primário: branches, MRs, CI/CD (E8/E9), issues internas | Privado |
-| **GitHub** (`github.com/sandinocoelho/judgement-of-the-cangaceiro`) | Distribuição pública: espelho de `main` nos releases estáveis, GitHub Releases com artefatos (consumido pelo serviço de updates in-game, ver A2/`GitHubUpdates`) | Público (GPLv3 — fonte precisa ficar acessível) |
+| **GitLab** (`gitlab.com/cloud.sandino/judgement-of-the-cangaceiro`) | Desenvolvimento primário (branches, MRs, CI/CD) **e distribuição interna**: binários de release ficam como artefatos permanentes dos pipelines de tag | Privado |
+| **GitHub** (`github.com/sandinocoelho/judgement-of-the-cangaceiro`) | **Espelho público de código-fonte apenas** (obrigação GPLv3): `main` + tags de release próprias. **Nenhuma Release, nenhum binário** — builds são vendidas (decisão de negócio, 2026-07-16) | Público |
 | **Upstream** (`github.com/00-Evan/shattered-pixel-dungeon`) | Fonte original do SPD, só para sincronizar melhorias/correções do jogo base | Público, não é nosso |
 
 O GitLab nunca conhece o `upstream` — a sincronização com o SPD passa exclusivamente pela máquina local (branch `upstream-sync/spd-x.y.z`, ver exceção abaixo).
 
+> Nota (A2): o serviço de updates in-game (`GitHubUpdates`) aponta para o endpoint de releases do GitHub, que fica **vazio de propósito** — o jogo responde "sem update" graciosamente. Repontar updates para um canal próprio é decisão futura de produto.
+
 ## Papéis dos 3 remotes (visão do clone local)
 
 - **`origin` → GitLab.** Onde o trabalho do dia a dia acontece: push de feature branches, abertura de MR, merge para `main`.
-- **`github` → GitHub (fork público).** Só recebe push do job de mirror por tag de release **[PENDENTE — mecanismo de E4]**; nunca de push manual de desenvolvimento (branches de feature não vão pra lá).
+- **`github` → GitHub (espelho público).** Só recebe push do job manual `mirror:github` do pipeline de tag (tag exata + `main` fast-forward — mecanismo do E4, ver `docs/release-mirror-checklist.md`); nunca push manual de desenvolvimento.
 - **`upstream` → SPD original (00-Evan).** Só fetch, nunca push. Usado para trazer commits do jogo base via `upstream-sync/spd-x.y.z`.
 
 ## Fluxo padrão: card → release
 
 1. **Card** (ticket no Jira, projeto CANGA) definido e priorizado.
-2. **Branch** curta a partir de `main`, naming `<ticket>-descricao` (ex.: `CANGA-27-development-process`) — ver `docs/branching-policy.md`.
+2. **Branch** curta a partir de `main`, naming `<ticket>-descricao` (ex.: `canga-27-development-process`) — ver `docs/branching-policy.md`.
 3. **MR** para `main` usando o template (`docs/PULL_REQUEST_TEMPLATE.md`) com o checklist objetivo preenchido.
-4. **Gate antes do merge**: pipeline verde no CI **[PENDENTE — CI ainda não existe, ver E8]**; até o CI existir, o gate é build local + checklist do template preenchido manualmente.
+4. **Gate antes do merge**: pipeline verde no CI (E8): `android:assembleDebug` + `desktop:debugSmoke` (jogo abre sob Xvfb) obrigatórios; `android:lint` roda como `allow_failure` (não bloqueia). Roda em todo MR e em push na `main`.
 5. **Merge**: só via MR (push direto em `main` está bloqueado pela proteção de branch do E5) — auto-merge com checklist para dev solo, sem revisor externo.
-6. **Release = tag `vX.Y.Z` na `main`.** A tag protegida dispara o pipeline de release **[PENDENTE — ver E9]**: build assinado → mapping R8 arquivado → gate manual → Release no GitHub com artefatos → mirror de `main`+tag pro GitHub (mecanismo do E4, ver abaixo).
+6. **Release = tag `vX.Y.Z` na `main`** (tag protegida). O pipeline de CD (E9) dispara: `android:assembleReleaseSigned` (keystore via Secure Files, ver `docs/release-signing.md`; APK assinado + **mapping R8 como artefato permanente**) e `desktop:releaseArtifacts` (jar universal + jpackage Linux) → **gate manual** → `mirror:github` (só código: tag exata + `main` fast-forward). Binários permanecem como artefatos privados no GitLab. Pipeline verde **não** substitui o smoke manual do APK R8 (regra do B4).
 
 ## Espelhamento GitLab → GitHub por release (E4)
 
-**[PENDENTE DE IMPLEMENTAÇÃO — E4/CANGA-25 ainda não foi executado neste momento; esta seção documenta o desenho já decidido, a ser validado quando E4 rodar.]**
-
-Desenho decidido:
-- O espelhamento é um **job de pipeline disparado por tag de release** (`v*`), não o push-mirror nativo do GitLab (que espelharia continuamente e vazaria histórico de desenvolvimento não estável pro repo público).
-- Credencial: PAT (Personal Access Token) **fine-grained**, escopo só `contents:write` no repo do GitHub.
-- **Nunca `--force`** no push pro GitHub.
-- Só as tags **próprias do fork** (`v*`) são espelhadas — nunca as centenas de tags herdadas do SPD upstream.
-- A Release do GitHub com artefatos binários continua sendo publicada nesse fluxo — é um hard dependency: o serviço de updates in-game (`GitHubUpdates`, ticket A2) consome `api.github.com/repos/sandinocoelho/judgement-of-the-cangaceiro/releases`. Quebrar esse endpoint quebra o update in-game.
+Implementado e validado (ensaio ponta-a-ponta em 2026-07-16, detalhes em `docs/release-mirror-checklist.md`):
+- Job de pipeline **manual** disparável só em tag de release (`v*`) — não é o push-mirror nativo do GitLab (que espelharia continuamente e vazaria histórico de desenvolvimento).
+- Credencial: PAT **fine-grained**, escopo só `contents:write`, como variável masked+protected no GitLab.
+- **Nunca `--force`** — push não-fast-forward falha o job para investigação manual.
+- Só a **tag exata** que disparou o pipeline é espelhada (`$CI_COMMIT_TAG`) — nunca glob; as 96 tags herdadas do SPD jamais vazam.
+- **Nenhuma Release/binário é publicado no GitHub** (decisão de negócio, 2026-07-16).
 
 ## Exceção: sincronização com o upstream
 
