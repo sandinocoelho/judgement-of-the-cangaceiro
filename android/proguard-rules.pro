@@ -1,5 +1,5 @@
 # retain these to support class references for the bundling and translation systems
--keepnames class com.shatteredpixel.** { *; }
+-keepnames class cloud.sandino.judgementofthecangaceiro.** { *; }
 -keepnames class com.watabou.** { *; }
 
 # keep classes that are instantiated via reflection
