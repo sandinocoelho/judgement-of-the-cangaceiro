@@ -152,9 +152,13 @@ desktop:debugSmoke:
 
 # ---------------------------------------------------------------------------
 # CD por tag (CANGA-30 / E9): tag protegida v* -> builds de release assinados
-# -> gate MANUAL -> Release no GitHub + mirror da tag exata.
-# Ensaio: use uma tag com hífen (ex.: v0.0.1-rc1) — ela vira prerelease no
-# GitHub, e o updates checker in-game (A2) só a oferece a quem opta por betas.
+# -> gate MANUAL -> mirror do código-fonte para o GitHub.
+#
+# DECISÃO DE NEGÓCIO (2026-07-16): builds são VENDIDAS — binários ficam
+# restritos aos artefatos deste projeto GitLab (privado). O GitHub é apenas
+# espelho de código (obrigação de fonte do fork GPLv3): nenhuma Release,
+# nenhum asset. O updates checker in-game (A2) apontará para um endpoint sem
+# releases e responderá "sem update" — repontá-lo é decisão futura.
 # Pipeline verde NÃO substitui o smoke manual do APK R8 (regra do B4).
 # ---------------------------------------------------------------------------
 
@@ -205,10 +209,12 @@ desktop:releaseArtifacts:
       - desktop/build/libs/desktop-*.jar
       - JudgementOfTheCangaceiro-linux-x64.zip
 
-# Gate manual: nada é publicado fora do GitLab sem um humano apertar o botão.
-# Instaladores desktop Win/macOS ficam fora do CD por decisão (runbooks
-# manuais — ver docs/release-signing.md e CANGA-31 para o lado iOS/mac).
-publish:github:
+# Gate manual: nada sai do GitLab sem um humano apertar o botão. Este job
+# espelha SOMENTE código-fonte (tag exata + main fast-forward) — jamais cria
+# Release no GitHub ou sobe binários (builds são vendidas; ver decisão no
+# cabeçalho desta seção). Instaladores desktop Win/macOS ficam fora do CD por
+# decisão (runbooks manuais — docs/release-signing.md e CANGA-31 para iOS/mac).
+mirror:github:
   extends:
     - .rules_release_tag
   image: eclipse-temurin:17-jdk
@@ -222,41 +228,14 @@ publish:github:
     GIT_DEPTH: "0"
     GH_REPO: "sandinocoelho/judgement-of-the-cangaceiro"
   before_script:
-    - apt-get update -qq && apt-get install -y -qq git curl jq zip
+    - apt-get update -qq && apt-get install -y -qq git
   script:
-    # --- mirror (regras do E4: só a tag exata, NUNCA glob; main só fast-forward) ---
+    # regras do E4: só a tag exata, NUNCA glob (96 tags herdadas do SPD não
+    # podem vazar); main só fast-forward
     - git remote add github "https://oauth2:${GH_PAT}@github.com/${GH_REPO}.git" || git remote set-url github "https://oauth2:${GH_PAT}@github.com/${GH_REPO}.git"
     - git fetch origin main
     - git push github "refs/tags/${CI_COMMIT_TAG}:refs/tags/${CI_COMMIT_TAG}"
     # sem --force: se main do GitHub não for ancestral, o push falha e o job
     # para — investigar manualmente, jamais forçar (checklist do E4)
     - git push github "refs/remotes/origin/main:refs/heads/main"
-    # --- Release no GitHub (endpoint consumido pelo GitHubUpdates, A2) ---
-    - VERSION_CODE=$(grep -oE 'appVersionCode = [0-9]+' build.gradle | grep -oE '[0-9]+')
-    - VERSION_NAME=$(grep -oE "appVersionName = '[^']+'" build.gradle | cut -d"'" -f2)
-    - case "$CI_COMMIT_TAG" in *-*) PRERELEASE=true;; *) PRERELEASE=false;; esac
-    # o corpo segue o formato que o updates checker parseia: descrição, linha
-    # em branco, '---', e a linha "internal version number: NNN"
-    - |
-      BODY=$(printf 'Judgement of the Cangaceiro %s (%s)\n\n---\n\ninternal version number: %s\n' "$CI_COMMIT_TAG" "$VERSION_NAME" "$VERSION_CODE")
-      PAYLOAD=$(jq -n --arg tag "$CI_COMMIT_TAG" --arg body "$BODY" --argjson pre "$PRERELEASE" \
-        '{tag_name: $tag, name: $tag, body: $body, prerelease: $pre, draft: false}')
-      RELEASE_ID=$(curl --fail-with-body -sS -X POST \
-        -H "Authorization: Bearer ${GH_PAT}" -H "Accept: application/vnd.github+json" \
-        "https://api.github.com/repos/${GH_REPO}/releases" -d "$PAYLOAD" | jq -r '.id')
-      echo "GitHub release created: id $RELEASE_ID"
-    - |
-      upload_asset() {
-        local path="$1"
-        local name_enc
-        name_enc=$(basename "$path" | jq -sRr @uri)
-        curl --fail-with-body -sS -X POST \
-          -H "Authorization: Bearer ${GH_PAT}" -H "Content-Type: application/octet-stream" \
-          --data-binary @"$path" \
-          "https://uploads.github.com/repos/${GH_REPO}/releases/${RELEASE_ID}/assets?name=${name_enc}" > /dev/null
-        echo "uploaded: $(basename "$path")"
-      }
-      upload_asset android/build/outputs/apk/release/android-release.apk
-      upload_asset desktop/build/libs/desktop-*.jar
-      upload_asset JudgementOfTheCangaceiro-linux-x64.zip
-    - 'echo "Release ${CI_COMMIT_TAG} publicada e espelhada. Lembrete B4: rode o smoke manual do APK R8."'
+    - 'echo "Código espelhado (${CI_COMMIT_TAG} + main). Binários permanecem privados no GitLab. Lembrete B4: rode o smoke manual do APK R8."'
