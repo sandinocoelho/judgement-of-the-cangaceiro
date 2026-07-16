@@ -18,6 +18,11 @@ release/
 # Local configuration file (sdk path, etc)
 local.properties
 
+# Release signing (CANGA-28) — keystore and its credentials must NEVER be committed
+keystore.properties
+*.jks
+*.keystore
+
 #intellij project files
 *.iml
 *.idea
