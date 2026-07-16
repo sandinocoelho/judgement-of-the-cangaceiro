@@ -1,5 +1,16 @@
 apply plugin: 'com.android.application'
 
+// Release signing (CANGA-28): credentials live in keystore.properties at the
+// repo root — gitignored, never committed. Locally the dev creates it by hand;
+// in CI (E9) the release job materializes it from Secure Files + masked vars.
+// When the file is absent the release build stays unsigned, so debug builds
+// and CI's assembleDebug work on machines without the keystore.
+def keystoreProps = new Properties()
+def keystorePropsFile = rootProject.file('keystore.properties')
+if (keystorePropsFile.exists()) {
+    keystorePropsFile.withInputStream { keystoreProps.load(it) }
+}
+
 android {
     namespace 'cloud.sandino.judgementofthecangaceiro.android'
     // Local dev machine has "android-36.1" installed instead of plain "android-36"
@@ -30,6 +41,17 @@ android {
         targetSdkVersion appAndroidTargetSDK
     }
 
+    signingConfigs {
+        if (keystorePropsFile.exists()) {
+            release {
+                storeFile file(keystoreProps['storeFile'])
+                storePassword keystoreProps['storePassword']
+                keyAlias keystoreProps['keyAlias']
+                keyPassword keystoreProps['keyPassword']
+            }
+        }
+    }
+
     buildTypes {
         debug {
             applicationIdSuffix ".indev"
@@ -40,6 +62,9 @@ android {
             }
         }
         release {
+            if (keystorePropsFile.exists()) {
+                signingConfig signingConfigs.release
+            }
 
             //These lines enable R8, which is a code shrinker/optimizer/obfuscator.
             //This makes release APKs smaller and more efficient, but also makes debugging trickier
