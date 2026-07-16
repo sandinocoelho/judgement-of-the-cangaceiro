@@ -2,7 +2,14 @@ apply plugin: 'com.android.application'
 
 android {
     namespace 'cloud.sandino.judgementofthecangaceiro.android'
-    compileSdk appAndroidCompileSDK
+    // Machine has "android-36.1" installed instead of plain "android-36" (Google's
+    // newer minor-revision SDK naming). compileSdk needs the exact installed hash
+    // string; targetSdk below stays a plain int since it's just a manifest flag,
+    // not a platform-jar dependency. NOTE: this may need reverting to
+    // `compileSdk appAndroidCompileSDK` for CI (E8) if that environment has the
+    // plain "android-36" platform instead.
+    compileSdkVersion "android-${appAndroidCompileSDK}.1"
+    buildToolsVersion "36.1.0"
     compileOptions.sourceCompatibility = compileOptions.targetCompatibility = appJavaCompatibility
 
     sourceSets.main.assets.srcDirs = [new File(project(':core').projectDir, "/src/main/assets")]
