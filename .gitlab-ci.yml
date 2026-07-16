@@ -1,0 +1,149 @@
+# CANGA-29 (E8) — CI pipeline for merge requests and pushes to main.
+#
+# Scope: android:assembleDebug + a desktop debug smoke-run, plus an
+# allow_failure lint pass. iOS is intentionally excluded (CANGA-31 —
+# iOS stays a manual Mac runbook; GitLab macOS runners are paid/scarce).
+#
+# GitLab.com Free gives ~400 CI minutes/month. Check Settings > CI/CD >
+# Usage Quotas periodically; if this pipeline threatens that budget,
+# escalate to the stakeholder (buy extra minutes vs. a dedicated
+# runner) rather than letting jobs silently queue or get throttled.
+
+stages:
+  - build
+  - lint
+
+variables:
+  ANDROID_COMPILE_SDK: "36"
+  ANDROID_BUILD_TOOLS: "36.0.0"
+  ANDROID_SDK_ROOT: "$CI_PROJECT_DIR/.android-sdk"
+  GRADLE_USER_HOME: "$CI_PROJECT_DIR/.gradle"
+  # Google's cmdline-tools download has no "latest" alias; bump this when it goes stale.
+  ANDROID_CMDLINE_TOOLS_URL: "https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip"
+
+.rules_mr_and_main:
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_BRANCH == "main"'
+
+# NOTE: GitLab's `extends` replaces array-valued keys wholesale rather than
+# concatenating them, so a job can only pull its `cache:` list from ONE of
+# these hidden templates. .android_cache below carries both entries (Gradle +
+# SDK) for the two Android jobs; .gradle_cache alone covers the desktop job.
+.gradle_cache_entry: &gradle_cache_entry
+  key:
+    files:
+      - gradle/wrapper/gradle-wrapper.properties
+      - build.gradle
+  paths:
+    - .gradle/wrapper
+    - .gradle/caches
+
+.android_sdk_cache_entry: &android_sdk_cache_entry
+  key: "android-sdk-$ANDROID_COMPILE_SDK-$ANDROID_BUILD_TOOLS"
+  paths:
+    - .android-sdk/
+
+.gradle_cache:
+  cache:
+    - *gradle_cache_entry
+
+.android_cache:
+  cache:
+    - *gradle_cache_entry
+    - *android_sdk_cache_entry
+
+.android_sdk_setup:
+  image: eclipse-temurin:17-jdk
+  before_script:
+    # Idempotent: when the .android-sdk/ cache is warm (restored from another
+    # job's save), everything below the existence check is skipped — repeating
+    # the mv against an existing target is what broke the first lint run.
+    - |
+      export PATH="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH"
+      if [ ! -x "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager" ]; then
+        apt-get update -qq && apt-get install -y -qq wget unzip
+        wget -q "$ANDROID_CMDLINE_TOOLS_URL" -O /tmp/cmdline-tools.zip
+        unzip -q /tmp/cmdline-tools.zip -d /tmp/cmdline-tools-extract
+        mkdir -p "$ANDROID_SDK_ROOT/cmdline-tools"
+        mv /tmp/cmdline-tools-extract/cmdline-tools "$ANDROID_SDK_ROOT/cmdline-tools/latest"
+        # `|| true`: sdkmanager stops reading stdin once all licenses are
+        # accepted, so `yes` gets SIGPIPE (exit 141) — harmless, but the CI
+        # shell runs with pipefail and would otherwise fail the job on it.
+        yes | sdkmanager --licenses > /dev/null || true
+        sdkmanager "platform-tools" "platforms;android-${ANDROID_COMPILE_SDK}" "build-tools;${ANDROID_BUILD_TOOLS}" > /dev/null
+      fi
+
+android:assembleDebug:
+  extends:
+    - .rules_mr_and_main
+    - .android_sdk_setup
+    - .android_cache
+  stage: build
+  script:
+    - export PATH="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH"
+    - ./gradlew :android:assembleDebug --console=plain
+  artifacts:
+    expire_in: 3 days
+    paths:
+      - android/build/outputs/apk/debug/*.apk
+
+android:lint:
+  extends:
+    - .rules_mr_and_main
+    - .android_sdk_setup
+    - .android_cache
+  stage: lint
+  allow_failure: true
+  script:
+    - export PATH="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH"
+    - ./gradlew :android:lintDebug --console=plain
+  artifacts:
+    expire_in: 3 days
+    when: always
+    paths:
+      - android/build/reports/lint-results-debug.html
+
+desktop:debugSmoke:
+  extends:
+    - .rules_mr_and_main
+    - .gradle_cache
+  image: eclipse-temurin:17-jdk
+  stage: build
+  before_script:
+    # Xvfb gives LWJGL/GLFW an X server to open a window against; the mesa
+    # packages give it a software GL context since the runner has no GPU.
+    - apt-get update -qq && apt-get install -y -qq xvfb libgl1-mesa-dri libopenal1 libxcursor1 libxi6 libxrandr2
+  script:
+    # Build first, untimed — a compile failure fails the job here, with the
+    # full Gradle error visible in the job log.
+    - ./gradlew :desktop:classes --console=plain
+    - |
+      set +e
+      # Everything is compiled by now, so 30s is pure game startup + idle. The
+      # game has no "exit after N seconds" mode and nobody closes the window in
+      # CI, so a healthy run ALWAYS ends via this timeout — which also means
+      # Gradle never gets to print BUILD SUCCESSFUL for the run itself; the
+      # startup marker grep below is the actual pass/fail signal.
+      xvfb-run --auto-servernum -- timeout 30s ./gradlew :desktop:debug --console=plain > desktop-debug.log 2>&1
+      EXIT_CODE=$?
+      set -e
+      cat desktop-debug.log
+      # 124/143 = the two timeout(1) exit conventions (xvfb-run's passthrough
+      # varies across versions); 0 = the game exited cleanly on its own.
+      case "$EXIT_CODE" in
+        0|124|143) ;;
+        *)
+          echo "desktop debug smoke run failed with exit code $EXIT_CODE"
+          exit 1
+          ;;
+      esac
+      # "[Controllers] added manager" is logged once the libGDX application is
+      # fully created — i.e. window, GL context, and game init all succeeded.
+      grep -q "\[Controllers\] added manager" desktop-debug.log
+      ! grep -qi "Has Crashed\|BUILD FAILED" desktop-debug.log
+  artifacts:
+    expire_in: 3 days
+    when: always
+    paths:
+      - desktop-debug.log
