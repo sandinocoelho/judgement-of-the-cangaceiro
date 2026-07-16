@@ -60,7 +60,9 @@ public class GitHubUpdates extends UpdateService {
 		}
 
 		Net.HttpRequest httpGet = new Net.HttpRequest(Net.HttpMethods.GET);
-		httpGet.setUrl("https://api.github.com/repos/00-Evan/shattered-pixel-dungeon/releases");
+		//release bodies must contain "internal version number: NNN" for the
+		// version check below to pick them up (same convention as upstream)
+		httpGet.setUrl("https://api.github.com/repos/sandinocoelho/judgement-of-the-cangaceiro/releases");
 		httpGet.setHeader("Accept", "application/vnd.github.v3+json");
 
 		Gdx.net.sendHttpRequest(httpGet, new Net.HttpResponseListener() {

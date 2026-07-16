@@ -51,7 +51,8 @@ android {
 
             dependencies {
                 releaseImplementation project(':services:updates:githubUpdates')
-                releaseImplementation project(':services:news:shatteredNews')
+                //no news feed of our own yet; must not query upstream's feed (CANGA-7)
+                releaseImplementation project(':services:news:noNews')
             }
         }
     }
