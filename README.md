@@ -1,38 +1,38 @@
 # Judgement of the Cangaceiro
 
-**Judgement of the Cangaceiro** (grafia canônica: *Judgement*, com "e" — nunca "Judgment") é um fork do Shattered Pixel Dungeon ambientado no sertão nordestino brasileiro, no universo do cangaço.
+**Judgement of the Cangaceiro** (grafia canônica: *Judgement*, com "e" — nunca "Judgment") é um roguelike de calabouço em pixel art ambientado no **sertão nordestino brasileiro**, no universo do **cangaço** — Lampião, jagunços, coronéis, seca e a justiça dura do sertão.
+
+É um fork do [Shattered Pixel Dungeon](https://shatteredpixel.com/shatteredpd/), de Evan Debenham, que por sua vez é baseado no [código-fonte do Pixel Dungeon](https://github.com/00-Evan/pixel-dungeon-gradle), de [Watabou](https://watabou.itch.io/).
 
 - Nome completo: **Judgement of the Cangaceiro** — usado em título de janela, lojas e materiais oficiais.
 - Nome curto: **Cangaceiro** — usado onde o espaço é restrito (ex.: label do launcher Android).
 
-O conteúdo abaixo é o README original do projeto upstream, mantido como referência.
+## Plataformas e distribuição
 
----
+O jogo compila para **Android** e **Desktop** (Windows, Linux e macOS via jar universal). Suporte a iOS existe no código herdado do upstream, mas está fora do escopo atual do projeto.
 
-# Shattered Pixel Dungeon
+As builds oficiais serão **vendidas** — os canais de distribuição serão anunciados junto com o primeiro release. Este repositório contém o código-fonte completo do jogo (obrigação e espírito da GPLv3), mas não distribui binários oficiais.
 
-[Shattered Pixel Dungeon](https://shatteredpixel.com/shatteredpd/) is an open-source traditional roguelike dungeon crawler with randomized levels and enemies, and hundreds of items to collect and use. It's based on the [source code of Pixel Dungeon](https://github.com/00-Evan/pixel-dungeon-gradle), by [Watabou](https://watabou.itch.io/).
+## Este repositório
 
-Shattered Pixel Dungeon currently compiles for Android, iOS, and Desktop platforms. You can find official releases of the game on:
+O repositório público no GitHub é um **espelho somente-leitura** do repositório de desenvolvimento (privado, no GitLab): recebe o branch `main` e as tags de release. **Pull requests não são aceitos aqui.** Issues (bugs, sugestões) são bem-vindas.
 
-[![Get it on Google Play](https://shatteredpixel.com/assets/images/badges/gplay.png)](https://play.google.com/store/apps/details?id=com.shatteredpixel.shatteredpixeldungeon)
-[![Download on the App Store](https://shatteredpixel.com/assets/images/badges/appstore.png)](https://apps.apple.com/app/shattered-pixel-dungeon/id1563121109)
-[![Steam](https://shatteredpixel.com/assets/images/badges/steam.png)](https://store.steampowered.com/app/1769170/Shattered_Pixel_Dungeon/)<br>
-[![GOG.com](https://shatteredpixel.com/assets/images/badges/gog.png)](https://www.gog.com/game/shattered_pixel_dungeon)
-[![Itch.io](https://shatteredpixel.com/assets/images/badges/itch.png)](https://shattered-pixel.itch.io/shattered-pixel-dungeon)
-[![Github Releases](https://shatteredpixel.com/assets/images/badges/github.png)](https://github.com/00-Evan/shattered-pixel-dungeon/releases)
+## Compilando do código-fonte
 
-If you like this game, please consider [supporting me on Patreon](https://www.patreon.com/ShatteredPixel)!
+Guias em `/docs`:
 
-There is an official blog for this project at [ShatteredPixel.com](https://www.shatteredpixel.com/blog/).
+- [Compilando para Android](docs/getting-started-android.md)
+- [Compilando para desktop](docs/getting-started-desktop.md)
+- [Compilando para iOS](docs/getting-started-ios.md) *(fora do escopo atual — mantido como referência)*
+- [Mudanças recomendadas para criar sua própria versão](docs/recommended-changes.md) *(herdado do upstream)*
 
-The game also has a translation project hosted on [Transifex](https://explore.transifex.com/shattered-pixel/shattered-pixel-dungeon/).
+## Licença e atribuição
 
-Note that **this repository does not accept pull requests!** The code here is provided in hopes that others may find it useful for their own projects, not to allow community contribution. Issue reports of all kinds (bug reports, feature requests, etc.) are welcome.
+Este projeto é licenciado sob a **[GNU General Public License v3](LICENSE.txt)**, a mesma licença dos projetos que lhe deram origem.
 
-If you'd like to work with the code, you can find the following guides in `/docs`:
-- [Compiling for Android.](docs/getting-started-android.md)
-    - **[If you plan to distribute on Google Play please read the end of this guide.](docs/getting-started-android.md#distributing-your-app)**
-- [Compiling for desktop platforms.](docs/getting-started-desktop.md)
-- [Compiling for iOS.](docs/getting-started-ios.md)
-- [Recommended changes for making your own version.](docs/recommended-changes.md)
+- **Shattered Pixel Dungeon** — Copyright (C) 2014-2026 Evan Debenham — [shatteredpixel.com](https://shatteredpixel.com/) · [código-fonte](https://github.com/00-Evan/shattered-pixel-dungeon)
+- **Pixel Dungeon** — Copyright (C) 2012-2015 Oleg Dolya (Watabou) — [watabou.itch.io](https://watabou.itch.io/)
+
+Judgement of the Cangaceiro não é afiliado a nem endossado pelos autores do Shattered Pixel Dungeon ou do Pixel Dungeon. Se você gosta da base deste jogo, considere [apoiar o Evan no Patreon](https://www.patreon.com/ShatteredPixel) — o trabalho dele é a fundação de tudo aqui.
+
+Nos termos da GPLv3, você é livre para usar, estudar, modificar e redistribuir este código, desde que derivados permaneçam sob a mesma licença e o código-fonte correspondente continue disponível.

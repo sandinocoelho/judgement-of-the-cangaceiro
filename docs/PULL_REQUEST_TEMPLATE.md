@@ -13,6 +13,6 @@
 ## Plataformas afetadas
 
 - [ ] Android
-- [ ] iOS
+- [ ] iOS *(adiado — fora do escopo desde 2026-07-16; marcar só se tocar o módulo mesmo assim)*
 - [ ] Desktop
 - [ ] Cross-platform/Core (todas)
