@@ -109,22 +109,22 @@ desktop:debugSmoke:
     # packages give it a software GL context since the runner has no GPU.
     - apt-get update -qq && apt-get install -y -qq xvfb libgl1-mesa-dri libopenal1 libxcursor1 libxi6 libxrandr2
   script:
+    # Build first, untimed — a compile failure fails the job here, with the
+    # full Gradle error visible in the job log.
+    - ./gradlew :desktop:classes --console=plain
     - |
       set +e
-      # 300s: cold cache (first-ever run) has to download Gradle itself, resolve
-      # every Maven dependency, and compile core's ~1200 .java files before the
-      # game even starts — 45s wasn't close. Once the Gradle cache is warm this
-      # should return in well under a minute; revisit if 300s ever gets tight.
-      xvfb-run --auto-servernum -- timeout 300s ./gradlew :desktop:debug --console=plain > desktop-debug.log 2>&1
+      # Everything is compiled by now, so 30s is pure game startup + idle. The
+      # game has no "exit after N seconds" mode and nobody closes the window in
+      # CI, so a healthy run ALWAYS ends via this timeout — which also means
+      # Gradle never gets to print BUILD SUCCESSFUL for the run itself; the
+      # startup marker grep below is the actual pass/fail signal.
+      xvfb-run --auto-servernum -- timeout 30s ./gradlew :desktop:debug --console=plain > desktop-debug.log 2>&1
       EXIT_CODE=$?
       set -e
       cat desktop-debug.log
-      # 124/143 = our own timeout cutting off a healthy, still-running game loop
-      # (the desktop `debug` task also sets ignoreExitValue, so a real crash of
-      # the child JVM alone wouldn't fail this either — the log greps below are
-      # what actually catch a broken build or a startup crash). xvfb-run's own
-      # exit-code passthrough isn't fully consistent across versions, so treat
-      # both timeout(1) exit conventions as acceptable.
+      # 124/143 = the two timeout(1) exit conventions (xvfb-run's passthrough
+      # varies across versions); 0 = the game exited cleanly on its own.
       case "$EXIT_CODE" in
         0|124|143) ;;
         *)
@@ -132,7 +132,9 @@ desktop:debugSmoke:
           exit 1
           ;;
       esac
-      grep -q "BUILD SUCCESSFUL" desktop-debug.log
+      # "[Controllers] added manager" is logged once the libGDX application is
+      # fully created — i.e. window, GL context, and game init all succeeded.
+      grep -q "\[Controllers\] added manager" desktop-debug.log
       ! grep -qi "Has Crashed\|BUILD FAILED" desktop-debug.log
   artifacts:
     expire_in: 3 days
