@@ -1,6 +1,6 @@
 # Checklist: espelhamento GitLab → GitHub por release (E4)
 
-> Estado: mecanismo documentado, **ainda não executado** (primeiro espelhamento real fica pendente de confirmação). Quando alguém rodar este checklist manualmente ou implementar o job de pipeline (integração completa com E9), volte aqui e marque como executado.
+> Estado: mecanismo documentado e **primeiro espelhamento de branch executado com sucesso em 2026-07-15** (`git push github main`, fast-forward `7b8b845a7..ecf2579b1`, confirmado via API: SHA do GitHub bate com o local, zero tags vazaram). Espelhamento de **tag** ainda não foi exercitado — só faz sentido quando existir uma tag de release real do fork (depende de D1/E9).
 
 ## Achado importante: tags `v*` não distinguem fork de upstream
 
