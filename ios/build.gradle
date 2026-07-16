@@ -41,7 +41,8 @@ createIPA.dependsOn build
 dependencies {
     implementation project(':core')
     implementation project(':services:updates:debugUpdates')
-    implementation project(':services:news:shatteredNews')
+    //no news feed of our own yet; must not query upstream's feed (CANGA-7)
+    implementation project(':services:news:noNews')
 
     implementation "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
     implementation "com.mobidevelop.robovm:robovm-rt:$robovmVersion"

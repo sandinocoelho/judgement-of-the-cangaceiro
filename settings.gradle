@@ -15,3 +15,4 @@ include ':services'
     //news
     include ':services:news:debugNews'
     include ':services:news:shatteredNews'
+    include ':services:news:noNews'
