@@ -1,6 +1,8 @@
 # Checklist: espelhamento GitLab → GitHub por release (E4)
 
-> Estado: mecanismo documentado e **primeiro espelhamento de branch executado com sucesso em 2026-07-15** (`git push github main`, fast-forward `7b8b845a7..ecf2579b1`, confirmado via API: SHA do GitHub bate com o local, zero tags vazaram). Espelhamento de **tag** ainda não foi exercitado — só faz sentido quando existir uma tag de release real do fork (depende de D1/E9).
+> Estado: mecanismo documentado, **espelhamento de branch executado com sucesso em 2026-07-15** (`git push github main`, fast-forward, SHA confirmado via API, zero tags vazaram) e **espelhamento de tag exercitado ponta-a-ponta em 2026-07-16** no ensaio do pipeline de CD (E9, tag `v0.0.1-rc2`): só a tag exata chegou ao GitHub, main por fast-forward, nenhuma tag herdada vazou. O mirror está **automatizado** no job manual `mirror:github` do `.gitlab-ci.yml` — este checklist permanece como referência do mecanismo e para execução manual excepcional.
+>
+> **Decisão de negócio (2026-07-16)**: builds são **vendidas** — binários ficam restritos aos artefatos do GitLab (projeto privado). O GitHub é somente espelho de código-fonte: **nenhuma Release, nenhum asset é publicado lá**. O updates checker in-game (A2) fica dormente até existir um canal de updates próprio.
 
 ## Achado importante: tags `v*` não distinguem fork de upstream
 
@@ -22,8 +24,7 @@ No pipeline de CD (E9), isso é natural: o job roda no contexto de `$CI_COMMIT_T
 
 1. **Branch**: `git push github main` — fast-forward apenas, nunca `--force`. Verificar antes com `git merge-base --is-ancestor github/main main` (se não for ancestor, PARAR e investigar — não forçar).
 2. **Tag** (só quando houver uma tag de release real do fork para espelhar): `git push github refs/tags/<tag-exata>:refs/tags/<tag-exata>` — nome explícito, nunca glob.
-3. **Verificar** no GitHub: branch `main` atualizado, só a tag esperada apareceu (nenhuma das 96 herdadas vazou).
-4. **Release do GitHub com artefatos**: publicar via `gh release create <tag-exata> <artefatos...>` (ou pela automação do E9 quando existir). Esse é o endpoint que o serviço de updates in-game (`GitHubUpdates`, ticket A2) consome — confirmar que a Release aparece em `api.github.com/repos/sandinocoelho/judgement-of-the-cangaceiro/releases` depois de publicada.
+3. **Verificar** no GitHub: branch `main` atualizado, só a tag esperada apareceu (nenhuma das 96 herdadas vazou), e **zero Releases/assets** — binários jamais saem do GitLab (decisão de negócio de 2026-07-16; o item antigo de "publicar Release com artefatos" foi removido deste checklist por essa razão).
 
 ## Credenciais
 
