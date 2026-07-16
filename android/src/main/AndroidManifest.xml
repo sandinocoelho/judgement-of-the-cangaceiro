@@ -18,7 +18,7 @@
 
 	<application
 		android:icon="@mipmap/ic_launcher"
-		android:label="${appName}"
+		android:label="${appShortName}"
 		android:theme="@style/GameTheme"
 		android:appCategory="game"
 		android:isGame="true"
