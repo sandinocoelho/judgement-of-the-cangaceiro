@@ -1,3 +1,14 @@
+# Judgement of the Cangaceiro
+
+**Judgement of the Cangaceiro** (grafia canônica: *Judgement*, com "e" — nunca "Judgment") é um fork do Shattered Pixel Dungeon ambientado no sertão nordestino brasileiro, no universo do cangaço.
+
+- Nome completo: **Judgement of the Cangaceiro** — usado em título de janela, lojas e materiais oficiais.
+- Nome curto: **Cangaceiro** — usado onde o espaço é restrito (ex.: label do launcher Android).
+
+O conteúdo abaixo é o README original do projeto upstream, mantido como referência.
+
+---
+
 # Shattered Pixel Dungeon
 
 [Shattered Pixel Dungeon](https://shatteredpixel.com/shatteredpd/) is an open-source traditional roguelike dungeon crawler with randomized levels and enemies, and hundreds of items to collect and use. It's based on the [source code of Pixel Dungeon](https://github.com/00-Evan/pixel-dungeon-gradle), by [Watabou](https://watabou.itch.io/).

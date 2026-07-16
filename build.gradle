@@ -11,11 +11,15 @@ buildscript {
 allprojects {
 
     ext {
-        appName = 'Shattered Pixel Dungeon'
+        appName = 'Judgement of the Cangaceiro'
+        //short name for space-constrained surfaces (Android launcher label)
+        appShortName = 'Cangaceiro'
         appPackageName = 'cloud.sandino.judgementofthecangaceiro'
 
-        appVersionCode = 896
-        appVersionName = '3.3.8'
+        //never decrement below 896 (upstream SPD compat code is keyed on version codes,
+        // see docs/recommended-changes.md); '+' for build metadata, '-' would mean pre-release
+        appVersionCode = 897
+        appVersionName = '3.3.8+canga.1'
 
         appJavaCompatibility = JavaVersion.VERSION_11
 
