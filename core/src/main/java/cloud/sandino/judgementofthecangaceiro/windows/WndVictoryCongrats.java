@@ -24,7 +24,6 @@ package cloud.sandino.judgementofthecangaceiro.windows;
 import cloud.sandino.judgementofthecangaceiro.ShatteredPixelDungeon;
 import cloud.sandino.judgementofthecangaceiro.messages.Messages;
 import cloud.sandino.judgementofthecangaceiro.scenes.PixelScene;
-import cloud.sandino.judgementofthecangaceiro.scenes.SupporterScene;
 import cloud.sandino.judgementofthecangaceiro.sprites.ItemSprite;
 import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
 import cloud.sandino.judgementofthecangaceiro.ui.Icons;
@@ -105,22 +104,13 @@ public class WndVictoryCongrats extends Window {
 
 		height += Math.max(dailyImg.height(), dailyTxt.height()) + 6;
 
-		RenderedTextBlock finalTxt = PixelScene.renderTextBlock(Messages.get(this, "thank_you") + " "  + Messages.get(this, "support_prompt"), 6);
+		//supporter prompt/button removed (CANGA-9) — no upstream Patreon links in the fork
+		RenderedTextBlock finalTxt = PixelScene.renderTextBlock(Messages.get(this, "thank_you"), 6);
 		finalTxt.maxWidth(width);
 		finalTxt.setPos(0, height);
 		add(finalTxt);
 
 		height = (int) finalTxt.bottom() + 4;
-
-		RedButton btnSupport = new RedButton(Messages.get(this, "support")) {
-			@Override
-			protected void onClick() {
-				ShatteredPixelDungeon.switchScene(SupporterScene.class);
-			}
-		};
-		btnSupport.icon(Icons.GOLD.get());
-		btnSupport.setRect(0, height, width / 2, 18);
-		add(btnSupport);
 
 		RedButton btnClose = new RedButton(Messages.get(this, "close")) {
 			@Override
@@ -129,7 +119,7 @@ public class WndVictoryCongrats extends Window {
 			}
 		};
 		btnClose.icon(Icons.EXIT.get());
-		btnClose.setRect(btnSupport.right() + 1, height, width / 2 - 1, 18);
+		btnClose.setRect(0, height, width, 18);
 		add(btnClose);
 
 		resize(width, (int)btnClose.bottom());

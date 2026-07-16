@@ -21,16 +21,7 @@
 
 package cloud.sandino.judgementofthecangaceiro.items.keys;
 
-import cloud.sandino.judgementofthecangaceiro.Dungeon;
-import cloud.sandino.judgementofthecangaceiro.SPDSettings;
-import cloud.sandino.judgementofthecangaceiro.ShatteredPixelDungeon;
-import cloud.sandino.judgementofthecangaceiro.actors.hero.Hero;
 import cloud.sandino.judgementofthecangaceiro.sprites.ItemSpriteSheet;
-import cloud.sandino.judgementofthecangaceiro.windows.WndSupportPrompt;
-import com.watabou.noosa.Game;
-import com.watabou.utils.Callback;
-
-import java.io.IOException;
 
 public class WornKey extends Key {
 	
@@ -47,24 +38,6 @@ public class WornKey extends Key {
 		this.depth = depth;
 	}
 
-	@Override
-	public boolean doPickUp(Hero hero, int pos) {
-		if(!SPDSettings.supportNagged()){
-			try {
-				Dungeon.saveAll();
-				Game.runOnRenderThread(new Callback() {
-					@Override
-					public void call() {
-						ShatteredPixelDungeon.scene().add(new WndSupportPrompt());
-					}
-				});
-			} catch (IOException e) {
-				ShatteredPixelDungeon.reportException(e);
-			}
-			
-		}
-		
-		return super.doPickUp(hero, pos);
-	}
+	//the upstream supporter prompt that triggered on first pickup was removed (CANGA-9)
 
 }
