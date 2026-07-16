@@ -56,17 +56,23 @@ variables:
 .android_sdk_setup:
   image: eclipse-temurin:17-jdk
   before_script:
-    - apt-get update -qq && apt-get install -y -qq wget unzip
-    - wget -q "$ANDROID_CMDLINE_TOOLS_URL" -O /tmp/cmdline-tools.zip
-    - unzip -q /tmp/cmdline-tools.zip -d /tmp/cmdline-tools-extract
-    - mkdir -p "$ANDROID_SDK_ROOT/cmdline-tools"
-    - mv /tmp/cmdline-tools-extract/cmdline-tools "$ANDROID_SDK_ROOT/cmdline-tools/latest"
-    - export PATH="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH"
-    # `|| true`: sdkmanager stops reading stdin once all licenses are accepted,
-    # so `yes` gets SIGPIPE (exit 141) — harmless, but the CI shell runs with
-    # pipefail and would otherwise fail the job on that alone.
-    - yes | sdkmanager --licenses > /dev/null || true
-    - sdkmanager "platform-tools" "platforms;android-${ANDROID_COMPILE_SDK}" "build-tools;${ANDROID_BUILD_TOOLS}" > /dev/null
+    # Idempotent: when the .android-sdk/ cache is warm (restored from another
+    # job's save), everything below the existence check is skipped — repeating
+    # the mv against an existing target is what broke the first lint run.
+    - |
+      export PATH="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH"
+      if [ ! -x "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager" ]; then
+        apt-get update -qq && apt-get install -y -qq wget unzip
+        wget -q "$ANDROID_CMDLINE_TOOLS_URL" -O /tmp/cmdline-tools.zip
+        unzip -q /tmp/cmdline-tools.zip -d /tmp/cmdline-tools-extract
+        mkdir -p "$ANDROID_SDK_ROOT/cmdline-tools"
+        mv /tmp/cmdline-tools-extract/cmdline-tools "$ANDROID_SDK_ROOT/cmdline-tools/latest"
+        # `|| true`: sdkmanager stops reading stdin once all licenses are
+        # accepted, so `yes` gets SIGPIPE (exit 141) — harmless, but the CI
+        # shell runs with pipefail and would otherwise fail the job on it.
+        yes | sdkmanager --licenses > /dev/null || true
+        sdkmanager "platform-tools" "platforms;android-${ANDROID_COMPILE_SDK}" "build-tools;${ANDROID_BUILD_TOOLS}" > /dev/null
+      fi
 
 android:assembleDebug:
   extends:
