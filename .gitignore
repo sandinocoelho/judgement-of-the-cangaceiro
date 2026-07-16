@@ -12,6 +12,9 @@
 build/
 release/
 
+# CI Android SDK cache (see .gitlab-ci.yml)
+.android-sdk/
+
 # Local configuration file (sdk path, etc)
 local.properties
 
