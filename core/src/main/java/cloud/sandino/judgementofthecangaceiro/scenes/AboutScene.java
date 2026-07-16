@@ -64,6 +64,24 @@ public class AboutScene extends PixelScene {
 		Component content = list.content();
 		content.clear();
 
+		//*** Judgement of the Cangaceiro Credits ***
+		//fork section added by CANGA-9 — the original credits below must never be
+		// removed (GPLv3 attribution)
+
+		final int CANGA_COLOR = 0xE8B44A;
+		CreditsBlock canga = new CreditsBlock(true, CANGA_COLOR,
+				"Judgement of the Cangaceiro",
+				null,
+				"Developed by: _Sandino M. Coelho_\nA fork of Shattered Pixel Dungeon set in the Brazilian sertão",
+				"sandino.cloud",
+				"https://sandino.cloud");
+		if (landscape()){
+			canga.setRect((w - colWidth)/2f, insets.top + 10, colWidth, 0);
+		} else {
+			canga.setRect((w - colWidth)/2f, insets.top + 6, colWidth, 0);
+		}
+		content.add(canga);
+
 		//*** Shattered Pixel Dungeon Credits ***
 
 		CreditsBlock shpx = new CreditsBlock(true, Window.SHPX_COLOR,
@@ -73,11 +91,13 @@ public class AboutScene extends PixelScene {
 				"ShatteredPixel.com",
 				"https://ShatteredPixel.com");
 		if (landscape()){
-			shpx.setRect((w - fullWidth)/2f - 6, insets.top + 10, 120, 0);
+			shpx.setRect((w - fullWidth)/2f - 6, canga.bottom() + 8, 120, 0);
 		} else {
-			shpx.setRect((w - fullWidth)/2f, insets.top + 6, 120, 0);
+			shpx.setRect((w - fullWidth)/2f, canga.bottom() + 8, 120, 0);
 		}
 		content.add(shpx);
+
+		addLine(shpx.top() - 4, content);
 
 		CreditsBlock alex = new CreditsBlock(false, Window.SHPX_COLOR,
 				"Splash Art & Design:",
