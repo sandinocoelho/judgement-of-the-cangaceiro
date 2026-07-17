@@ -1,33 +1,38 @@
-# Ícone base/master (CANGA-16)
+# Ícone do jogo — pixel art (CANGA-32)
 
-Conceito A aprovado em 2026-07-15: **chapéu de couro de meia-lua de Lampião
-com estrela de seis pontas**, estilo flat com contorno forte, paleta de couro
-sobre fundo de sertão (terracota).
+Conceito A aprovado: **chapéu de couro de meia-lua de Lampião com estrela de
+seis pontas**. A arte é **pixel art** (regra do projeto: o jogo é pixel art —
+nada de vetor liso/gradientes): sprite autoral de 32×32, ampliado por
+nearest-neighbor em fatores inteiros.
 
 ## Arquivos
 
 | Arquivo | Papel |
 |---|---|
-| `hat-shapes.svg.fragment` | **Fonte da verdade** do desenho do chapéu — edite aqui |
-| `generate-icons.sh` | Gera os SVGs das variantes e renderiza os PNGs (Edge headless + .NET p/ downscale) |
-| `icon-master.svg` / `icon-master-1024.png` | Arte master 1024px, full-bleed quadrado (lojas aplicam a própria máscara de canto) |
-| `icon-adaptive-foreground.{svg,png}` | Foreground do adaptive icon Android — conteúdo dentro da zona segura de 66% |
-| `icon-adaptive-background.{svg,png}` | Background do adaptive icon (gradiente sertão + disco de sol) |
-| `icon-adaptive-monochrome.{svg,png}` | Camada monochrome (Android 13+ themed icons): silhueta branca, estrela vazada — só o alpha é usado |
-| `icon-adaptive-monochrome-preview.png` | Apenas para avaliação humana (silhueta sobre fundo colorido) |
-| `icon-silhouette-test-48.png` | Prova de legibilidade a 48px (critério de aceite) |
+| `generate-pixel-icon.ps1` | **Fonte da verdade**: o grid 32×32 vive dentro dele; gera todas as artes 1024 |
+| `icon-master-1024.png` | Master release (chapéu 28×, fundo terracota com dither) |
+| `icon-master-debug-1024.png` | Master debug (fundo azul-noite — INDEV distinguível) |
+| `icon-adaptive-foreground.png` | Foreground adaptive Android (chapéu 21× = 672px, dentro da zona segura de 66%) |
+| `icon-adaptive-background.png` / `-debug.png` | Backgrounds full-bleed (release/debug) |
+| `icon-adaptive-monochrome.png` | Camada monochrome (Android 13+): silhueta branca, estrela vazada — só alpha |
+| `icon-adaptive-monochrome-preview.png` | Só para avaliação humana |
+| `icon-silhouette-test-48.png` | Prova de legibilidade a 48px |
+| `generate-android-mipmaps.ps1` | Downscale dos 1024 para os 42 mipmaps de `android/src/{main,debug}/res` |
+| `generate-desktop-icons.ps1` | Downscale + empacotamento de `icon_16..256.png`, `windows.ico`, `mac.icns` |
 
-## Regenerar
+## Regenerar tudo
 
-```bash
-cd art/icon && bash generate-icons.sh
+```powershell
+cd art/icon
+powershell -File generate-pixel-icon.ps1        # grid 32x32 -> artes 1024
+powershell -File generate-android-mipmaps.ps1   # -> android/src/**/res/mipmap-*
+powershell -File generate-desktop-icons.ps1     # -> desktop/src/main/assets/icons/
 ```
 
-Os SVGs de variantes são gerados a partir do fragment — nunca edite os SVGs
-gerados diretamente.
+Para editar a arte: mude os caracteres do grid `$rows` no
+`generate-pixel-icon.ps1` (legenda da paleta no próprio script; o validador
+acusa linha/caractere inválido) e rode os três passos acima.
 
-## Consumo
-
-- **C2 (Android)**: foreground/background/monochrome → mipmap adaptive icons
-- **C3 (Desktop)**: master → icon_16..256.png, windows.ico, mac.icns
-- **C4 (iOS)**: master → conjunto de ícones + splash
+> Histórico: a primeira iteração (placeholder) era vetorial/flat, gerada por um
+> pipeline SVG+Edge removido no CANGA-32 — está no histórico do git se um dia
+> for útil.
