@@ -76,6 +76,11 @@ runtime {
                 jpackageHome = file("./build/jdks/win/jdk-17.0.17+10")
                 imageOptions = ["--icon", file("./src/main/assets/icons/windows.ico"),
                                 "--java-options", "-XX:+IgnoreUnrecognizedVMOptions"]
+                //MSI installer (task :desktop:jpackage); requires WiX 3.x on PATH
+                installerType = "msi"
+                installerOptions = ["--win-dir-chooser", "--win-menu", "--win-shortcut",
+                                    "--win-per-user-install",
+                                    "--vendor", "sandino.cloud"]
             }
         }
     } else if (osName.contains('linux')) {
