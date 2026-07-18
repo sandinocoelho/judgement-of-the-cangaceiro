@@ -17,9 +17,10 @@ allprojects {
         appPackageName = 'cloud.sandino.judgementofthecangaceiro'
 
         //never decrement below 896 (upstream SPD compat code is keyed on version codes,
-        // see docs/recommended-changes.md); '+' for build metadata, '-' would mean pre-release
-        appVersionCode = 897
-        appVersionName = '3.3.8+canga.1'
+        // see docs/recommended-changes.md); '+' for build metadata, '-' would mean pre-release.
+        //versionName scheme: <fork semver>+spd<upstream base>, tag = v<versionName>
+        appVersionCode = 898
+        appVersionName = '0.1.0+spd3.3.8'
 
         appJavaCompatibility = JavaVersion.VERSION_11
 
